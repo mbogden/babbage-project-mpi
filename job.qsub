@@ -1,6 +1,6 @@
-# !/bin/bash
-# $ -N test_foo
-# $ -pe mpi 4
+#!/bin/bash
+#$ -N test_foo
+#$ -pe mpi 4
  
 source test_env/bin/activate
 mpirun -n $NSLOTS python babbage-project-mpi/mpi_sort.py 
