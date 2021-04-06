@@ -23,7 +23,7 @@ if rank == 0:
 	send_data = np.loadtxt( argv[1], delimiter=',', dtype=np.float32 )
 	print('Node 0 sending: \n',send_data,'\n')
 
-recv_data = np.empty((3,4),dtype=np.float32)
+recv_data = np.ones((6,4),dtype=np.float32) * np.nan
 
 comm.Scatter( send_data, recv_data, root=0 )
 
