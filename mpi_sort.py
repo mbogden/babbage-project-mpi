@@ -23,7 +23,7 @@ if rank == 0:
 	send_data = np.loadtxt( argv[1], delimiter=',', dtype=np.float32 )
 	print('Node 0 sending: \n',send_data,'\n')
 	
-	# Rank 0 will calc how much data is going to each node, and which array to sort by
+	# Rank 0 calculates how much data is going to each node, and which array to sort by
 
 	n_per_node = round( 2 * float(send_data.shape[0]) / float(size) )
 	sort_col = int( argv[2] )
@@ -95,6 +95,9 @@ print( count_to_nodes )
 count_from_nodes = comm.alltoall( count_to_nodes )
 print( count_from_nodes )
 
+# Clean up my array.
+my_array *= np.nan
+
 
 # TODO:  Adjust my_array size to hold all the data
 my_n = np.sum( count_from_nodes )
@@ -104,16 +107,16 @@ if my_n > my_array.shape[0]:
 
 
 # TODO:  Loop through nodes, sending the subsection of array to node
-#for i in range( size ):
 
 # Just practice with rank 1 sending to rank 2 for now
+#for i in range( size ):
 if rank == 1:
 	# Skip self
 
 	# TODO: Construct temporary array to send to everyone
 	temp_array_1 = np.ones( ( count_to_nodes[1] , 4 )) * rank
 
-	# Send the array
+	# Send the array, and move on
 	comm.isend( temp_array_1, dest=2, tag=77 )
 
 	print("Rank 1 sent to node 2: \n",temp_array_1)
@@ -133,8 +136,11 @@ if rank == 2:
 
 	print("Rank 2 received from rank 1:\n", temp_array_2)
 
-
 	# TODO: Add subarray to large array and move to next receive
+
+	# my_array[ something : something+size of temp array ] = temp_array_2 
+
+	# del temp_array
 
 
 # TODO:  Sort large array.
