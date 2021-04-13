@@ -4,12 +4,15 @@
 from sys import argv, exit
 import numpy as np
 import pandas as pd
+from hashlib import md5
 from mpi4py import MPI
 
 # For troubleshooting
 import time
 
 # Global variable for now
+printAll = True
+printAll = False
  
 # Grab useful things
 comm = MPI.COMM_WORLD
@@ -18,116 +21,136 @@ size = comm.Get_size()
 
 print( 'I am rank %d of %d' % ( rank, size ) )
  
-# Create data to broadcast
+# Create empty data for later broadcast
 send_data = None
-pd_send_data = None
 size_col = np.zeros( 2, dtype=np.uint64 )
 
 if rank == 0:
 	print('input data: %s' % argv[1])
 
+	# Read in csv data file passed in command line
 	pd_in = pd.read_csv( argv[1], header=None ).to_numpy( dtype=np.float32, copy=True )
 
-	# Force row_major
-	pd_send_data = np.empty( pd_in.shape, dtype=np.float32 )
-	pd_send_data[:,:] = pd_in[:,:]
+	# We want row major arrays to function properly with MPI Scsatter.  Pandas reads column major (Or vice versa)
+	# This swaps to row major, we instantiate a numpy array which default to row major, then copy the data
+	# If memory is a concern, we can create, copy, delete in chunks. 
+	# Or find the mythical function that does it for us.
+	send_data = np.empty( pd_in.shape, dtype=np.float32 )
+	send_data[:,:] = pd_in[:,:]
 	del pd_in
 
-	np_send_data = np.loadtxt( argv[1], delimiter=',', dtype=np.float32 )
+	# Old numpy reading file
+	# np_send_data = np.loadtxt( argv[1], delimiter=',', dtype=np.float32 )
 
-	#print('Node 0 read in numpy: \n', np_send_data.flags,'\n', np_send_data, '\n')
-	print('Node 0 read in pandas: \n', pd_send_data.flags,'\n', pd_send_data, '\n')
+	if printAll: 
+		#print('Node 0 read in numpy: \n', np_send_data.flags,'\n', np_send_data, '\n')
+		print('Node 0 read in pandas: \n', send_data.flags,'\n', send_data, '\n')
 	
 	# Rank 0 calculates how much data is going to each node, and which array to sort by
+	buffer_constant = 2.0
+	n_per_node = round( buffer_constant * float(send_data.shape[0]) / float(size) )
 
-	n_per_node = round( 2 * float(pd_send_data.shape[0]) / float(size) )
 	sort_col = int( argv[2] )
-
-	print( 'Size of input data: ', pd_send_data.shape[0] )
-	print( 'N per node ', n_per_node )
-	print( 'Sort by col: ', sort_col )
-
+	
+	# Create 2 integers to pass to nodes before passing giant data
 	size_col[0] = n_per_node
 	size_col[1] = sort_col
-	print( 'Sending to all: ',size_col)
+
+	if printAll: 
+			print( 'Size of input data: ', send_data.shape[0] )
+			print( 'N per node ', size_col[0] )
+			print( 'Sort by col: ', size_col[1] )
 
 
 # Rank 0 will do a "one to all" call saying how much data to expect, and which array to sort by
 size_col = comm.bcast( size_col, root = 0 )
-comm.Barrier()
-time.sleep( rank*0.25 )
-print( 'Rank %d received: %d - %d'%(rank, size_col[0], size_col[1]))
+
+if printAll:
+
+	# Syncronizing and offsetting time organized the print statements
+	comm.Barrier()
+	time.sleep( rank*0.25 )
+	print( 'Rank %d received size_col: '% rank, size_col)
+
+# Save as seperate named variables
 my_n = size_col[0]
 sort_col = size_col[1]
 
 # Create a recieving buffer with np.nan as placeholder
-my_array = np.ones( ( my_n, 4 ), dtype=np.float32 ) * np.nan
+my_array = np.empty( ( my_n, 4 ), dtype=np.float32 )
+my_array[:] = np.nan
 
 # Rank 0 is scattering the initial data to all nodes
 #send_data = np.transpose( send_data )
-comm.Scatter( pd_send_data, my_array, root=0 )
+comm.Scatter( send_data, my_array, root=0 )
 
-comm.Barrier()
-time.sleep( rank*0.25 )
-print( 'Rank %d received my_array: \n'%rank, my_array )
+# delete in data if rank 0
+if rank == 0:
+	del send_data
 
-# TODO: Each node will organize there array and determine which items are being sent where
+if printAll:
+	comm.Barrier()
+	time.sleep( rank*0.25 )
+	print( 'Rank %d received my_array: \n'%rank, my_array )
+
 def bin_my_array( my_array ):
 
-	index_to_nodes = []
-	for i in range( size ):
-		index_to_nodes.append([])
-
+	# Edges of bins known to all nodes
 	bins = np.linspace( 0, 1, size +1 )
+
+	# Create python list to seperate data
 	data_to_nodes = []
 
+	# Loop through bin edges and 
+	# Extract rows of data between bin edges
 	for i in range( size ):
 		data_to_nodes.append( my_array[(my_array[:,sort_col] < bins[i+1]) & (my_array[:,sort_col] >= bins[i])] )
 	
-	time.sleep( rank*0.25 )
 
-	#'''
-	# For initial printing and code development
-	print( 'Rank %d array:'%rank)
-	print( my_array )
-	for i in range( size ):
-		print( '%d -> %d' % ( rank, i ) )
-		print( data_to_nodes[i] )
-	#'''
+	if printAll:
+		comm.Barrier()
+		time.sleep( rank*0.25 )
+
+		print( 'Rank %d array:'%rank)
+		for i in range( size ):				
+			print( '\nRank %d -> %d' % ( rank, i ) )
+			print( data_to_nodes[i] )
 
 	return data_to_nodes
 
+# Bin my array to subarray to send to each node
 data_to_nodes = bin_my_array( my_array )
-
-# Clean up my array.
-my_array *= np.nan
-
 
 # Create integer array of how many items are going to each node
 count_to_nodes = np.zeros( size, dtype=np.uint64 )
 for i in range( size):
 	count_to_nodes[i] = len( data_to_nodes[i] )
 
-comm.Barrier()
-time.sleep( rank*0.25 )
-print( 'Rank %d count_to_nodes: ' % rank, count_to_nodes )
+# Clean up my array but keep for receiving data later
+my_array[:] = np.nan
 
-# Make all to all mpi call passing of number of items
-# All nodes should know how many items they're getting
+if printAll:
+		comm.Barrier()
+		time.sleep( rank*0.25 )
+		print( 'Rank %d count_to_nodes: ' % rank, count_to_nodes )
+
+# Make all to all mpi call passing how many data items are being send to each
 count_from_nodes = comm.alltoall( count_to_nodes )
 
-# Test Print
-comm.Barrier()
-time.sleep( rank*0.25 )
-print( 'Rank %d count_from_nodes: '%rank, count_from_nodes )
+if printAll:
+		comm.Barrier()
+		time.sleep( rank*0.25 )
+		print( 'Rank %d count_from_nodes: '%rank, count_from_nodes )
 
+# Count the total items expecting to be received
 my_n = np.sum( count_from_nodes )
-if my_n > my_array.shape[0]:
-	print("Rank %d my_array not big enough!: %d"%(rank, my_n) )
-	np.delete( my_array )
-	my_array = np.ones( ( my_n, 4 ), dtype=np.float32 ) * np.nan
 
-# TODO: Add items to your own large array again.
+# Make my_array bigger if it's smaller than incoming data
+if my_n > my_array.shape[0]:
+	if printAll:
+		print("Rank %d my_array not big enough!: %d"%(rank, my_n) )
+	del my_array
+	my_array = np.ones( ( my_n, 4 ), dtype=np.float32 ) * np.nan
 
 # Calc where my data should be saved
 if rank == 0:
@@ -135,23 +158,18 @@ if rank == 0:
 else:
 	my_i = int( np.sum( count_from_nodes[0:rank] ) )
 
-
-comm.Barrier()
-time.sleep( rank*0.25 )
-print( 'Rank %d saving own data to index: %d : %d' %( rank, int( my_i ), int( my_i + count_from_nodes[rank] ) ) )
+# Store subsection of my data into my array 
 my_array[ int(my_i) : int( my_i + count_from_nodes[rank] ), : ] = data_to_nodes[ rank ][:,:]
-print( 'Rank %d saving own data: \n' % rank, my_array )
-#my_array = data_to_nodes[ rank ]
 
+if printAll:
+		comm.Barrier()
+		time.sleep( rank*0.25 )
+		print( 'Rank %d saving own data at index: [ %d : %d ]' %( rank, int( my_i ), int( my_i + count_from_nodes[rank] ) ) )
+		print( my_array )
 
-comm.Barrier()
-time.sleep( rank )
-
-# TODO:  Loop through nodes, sending the subsection of array to node
-
-# Just practice with rank 1 sending to rank 2 for now
+# Loop through all nodes and send subsections of array to each
 for i in range( size ):
-	#if rank == 1:
+
 	# Skip self
 	if i == rank:
 		continue
@@ -159,36 +177,56 @@ for i in range( size ):
 	# Send the array, and move on
 	comm.isend( data_to_nodes[i], dest=i, tag=25 )
 
-	print( "Rank %d to %d: \n"%(rank, i),data_to_nodes[i] )
+	if printAll:
+		print( "Rank %d to %d: \n"%(rank, i),data_to_nodes[i] )
 
-comm.Barrier()
-time.sleep( rank )
+if printAll:
+		comm.Barrier()
+		time.sleep( rank*0.5 )
 
-# TODO:  Loop through nodes, gathering the subsections of arrays from each node and place in one large array
-
+# keeps track where to place incoming data in my array
 my_i = 0
 for i in range( size ):
 
 	# Skip self
 	if rank == i:
+		# My data should already be in array, skip.
 		my_i += count_from_nodes[i]
 		continue
 	
+	# Wait to receive incoming data and place directly into my_array.
 	my_array[ int(my_i) : int(my_i + count_from_nodes[i]), : ] = comm.recv( source=i, tag=25 )
 	my_i += count_from_nodes[i]
 
-	print("Rank %d from %d:\n"%(rank,i), my_array )
+	if printAll:
+		print("Rank %d from %d:\n"%(rank,i), my_array )
 
+# Remove np.nan rows
 my_array = my_array[ 0 : my_n , : ]
 
-comm.Barrier()
-time.sleep( rank*0.25 )
-print( "Rank %d will sort: \n "%rank, my_array )
+if printAll:
+		comm.Barrier()
+		time.sleep( rank*0.25 )
+		print( "Rank %d will sort: \n "%rank, my_array )
 
+# Sort my_array by column
 my_array = my_array[ np.argsort( my_array[:, sort_col] ) ]
 
+if printAll:
+		comm.Barrier()
+		time.sleep( rank*0.25 )
+		print( "Rank %d sorted array!: \n "%rank, my_array )
+
+# For verification, Extract x random rows for hash subsampling
+rand_n = 5
+np.random.seed( 1212 )
+my_str = ''
+for i in range(rand_n):
+		rand_i = np.random.randint( my_array.shape[0] )
+		rand_j = np.random.randint( my_array.shape[1] )
+		my_str += '%13e'% my_array[ rand_i, rand_j ]
+my_md5 = md5( my_str.encode() ).hexdigest()
 
 comm.Barrier()
 time.sleep( rank*0.25 )
-print( "Rank %d sorted array!: \n "%rank, my_array )
-
+print("%d : %s"%(rank, my_md5))

@@ -1,10 +1,12 @@
 import numpy as np
 
-n = 12
+np.random.seed( 1212 )
 
-oFile = open( 'test_data.csv', 'w' )
+n = 120
 
-for i in range( 12 ):
+oFile = open( 'data_1.csv', 'w' )
+
+for i in range( n ):
 	line = '%d,%f,%f,%f\n' % ( i, np.random.rand(), np.random.rand(), np.random.rand() )
 	oFile.write( line )
 oFile.close()
