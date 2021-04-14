@@ -1,0 +1,2250 @@
+1/1/1 File - data_1.csv / Nodes - 1 / Column - 1
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 1
+I am rank 0 of 1
+input data: babbage-project-mpi/data_1.csv
+0 : 37651e40ffd12807cb3aba9f48f2c774
+1/1/1 Done
+1/1/2 File - data_1.csv / Nodes - 1 / Column - 2
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 2
+I am rank 0 of 1
+input data: babbage-project-mpi/data_1.csv
+0 : e150c7f608850001a39c387a3967e758
+1/1/2 Done
+1/1/3 File - data_1.csv / Nodes - 1 / Column - 3
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 3
+I am rank 0 of 1
+input data: babbage-project-mpi/data_1.csv
+0 : 37b48904ed7b520ef010c8fc9912c2f2
+1/1/3 Done
+1/2/1 File - data_1.csv / Nodes - 2 / Column - 1
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 1
+I am rank 1 of 2
+I am rank 0 of 2
+input data: babbage-project-mpi/data_1.csv
+0 : 5399e30775e3d924c2dfd49c77ec6bf7
+1 : a72d90d7734f543db5a04c2ece065e47
+1/2/1 Done
+1/2/2 File - data_1.csv / Nodes - 2 / Column - 2
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 2
+I am rank 0 of 2
+input data: babbage-project-mpi/data_1.csv
+I am rank 1 of 2
+0 : 44644fbeff748930a2964bd956a78e8f
+1 : 447a6449e4dcd0c104be68aa80b7b125
+1/2/2 Done
+1/2/3 File - data_1.csv / Nodes - 2 / Column - 3
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 3
+I am rank 0 of 2
+I am rank 1 of 2
+input data: babbage-project-mpi/data_1.csv
+0 : 354a6be17c366d8d38376eb74de60259
+1 : 34b38635fc13897f40b2a5a22dfc3183
+1/2/3 Done
+1/4/1 File - data_1.csv / Nodes - 4 / Column - 1
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 1
+I am rank 1 of 4
+I am rank 3 of 4
+I am rank 0 of 4
+input data: babbage-project-mpi/data_1.csv
+I am rank 2 of 4
+0 : fd0ebc15694d4345ace1e4c53710bbab
+1 : cbd8ba579f3cebfce1c368c7d0d0f6a7
+2 : 9c70aeec0fcf0d677b9c8fc42177419b
+3 : 49d8c504eebed0216a244396f3a4590d
+1/4/1 Done
+1/4/2 File - data_1.csv / Nodes - 4 / Column - 2
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 2
+I am rank 1 of 4
+I am rank 2 of 4
+I am rank 3 of 4
+I am rank 0 of 4
+input data: babbage-project-mpi/data_1.csv
+0 : 81e7ae6b8437264f0526cf6550832cf3
+1 : 8800eee1620e9ba91e8ac86195bfa437
+2 : 802d57b97138844a2493a13dad1b190f
+3 : b9b264b4dd470c384bc9a024983e1d66
+1/4/2 Done
+1/4/3 File - data_1.csv / Nodes - 4 / Column - 3
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 3
+I am rank 3 of 4
+I am rank 2 of 4
+I am rank 1 of 4
+I am rank 0 of 4
+input data: babbage-project-mpi/data_1.csv
+0 : df1fd678d1f9eaf3fa2360f7105cace1
+1 : 33c210e0445fb39fdcf55596bf5a6ccf
+2 : cb0359e6aa86d54bcd5ed0d07a426a3d
+3 : 9fab53072faa649fb3575cce2618efb8
+1/4/3 Done
+1/8/1 File - data_1.csv / Nodes - 8 / Column - 1
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 1
+I am rank 0 of 8
+input data: babbage-project-mpi/data_1.csv
+I am rank 3 of 8
+I am rank 5 of 8
+I am rank 6 of 8
+I am rank 7 of 8
+I am rank 4 of 8
+I am rank 2 of 8
+I am rank 1 of 8
+0 : 0d862c306fd9f9b327a459c5f61a5c16
+1 : f7eb95baefb2c654fd8be95d0da7f776
+2 : 9fb2c7f15258fd6f7f31dcd4303b2b99
+3 : c5d4989df1836affd0297c42bc925ada
+4 : a2e6444052f0ec7878fd6b74909750f8
+5 : e331d79d25c4300f0372076f11a64e05
+6 : 6fdd39ca50aa5811f61484b7ca1779c7
+7 : 090c9a916949cae3cd620973b0469ba6
+1/8/1 Done
+1/8/2 File - data_1.csv / Nodes - 8 / Column - 2
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 2
+I am rank 4 of 8
+I am rank 6 of 8
+I am rank 0 of 8
+I am rank 2 of 8
+I am rank 3 of 8
+I am rank 5 of 8
+I am rank 7 of 8
+input data: babbage-project-mpi/data_1.csv
+I am rank 1 of 8
+0 : 5b368b1667a5528f6b106c4677c1425a
+1 : d760523185ed8d22dd8356ae4e8ae82a
+2 : 2de3c9f2e00ddda3ce91efe9a1b82e70
+3 : 189ed0473ab494f198760ad169b16e68
+4 : 80e526eba8ff3aa4b30f2f8f75562b8f
+5 : 9e5c52e32d55c158313a8d281dd8813c
+6 : 4f824e1ce9e1ef03300ac5b1979cbb3a
+7 : 033958a991d30cf3587218e608869e80
+1/8/2 Done
+1/8/3 File - data_1.csv / Nodes - 8 / Column - 3
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 3
+I am rank 2 of 8
+I am rank 6 of 8
+I am rank 1 of 8
+I am rank 3 of 8
+I am rank 4 of 8
+I am rank 5 of 8
+I am rank 7 of 8
+I am rank 0 of 8
+input data: babbage-project-mpi/data_1.csv
+0 : 4da254c354e3c05985127917b2797f3f
+1 : a533738ada45870949d24ab25528d3d2
+2 : 0f0c7148e9fff91cb0fa43c2daf289ac
+3 : 5631596d123d5e86f37bc67c6201ec3d
+4 : 0ee516b7b1dee44f914947875f0bbcad
+5 : 973230f2f9c18e4d9ecc8084eabec41c
+6 : 8e11b619371975b868ee40e838a910ea
+7 : d8da4fbfb1d0ddfb447606f310a42e16
+1/8/3 Done
+1/16/1 File - data_1.csv / Nodes - 16 / Column - 1
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 1
+I am rank 5 of 16
+I am rank 9 of 16
+I am rank 11 of 16
+I am rank 12 of 16
+I am rank 14 of 16
+I am rank 15 of 16
+I am rank 0 of 16
+input data: babbage-project-mpi/data_1.csv
+I am rank 6 of 16
+I am rank 8 of 16
+I am rank 10 of 16
+I am rank 2 of 16
+I am rank 4 of 16
+I am rank 7 of 16
+I am rank 13 of 16
+I am rank 1 of 16
+I am rank 3 of 16
+0 : 2ccb48fc12df40e10e97e5e4cd65e27a
+1 : 1853d17b8b25ce77b86e0e6bd7cd78af
+2 : 02898108e711cd507b3f5ab4feb053a8
+3 : 273f906cd8210dd032c7103ac56b6d2b
+4 : dea9dbd2866c0a60807b1c35dfd47060
+5 : 98207c7270f41056540e8503fe53ff47
+6 : d92ee2427f0cf0bef20bd75a6e261452
+7 : 7cb247c9e60b68b8040cc82aefc374ef
+8 : 83a3137e11f0f6a75694459f3899306e
+9 : ac91acc5dbbb7c3958d51ecc2eb982e8
+10 : 41273b896eb2b15d62ffef508ef69b3d
+11 : 5d3b998ccd71e5de2de17e2b949eaf82
+12 : 7295f170f08cfe0f98892e78a8053c7b
+13 : 8bf21114f2004ecba44749b03d0ccb0b
+14 : 7f6400ed4c8e013a8a69449752ee1130
+15 : 8911b95626fdfd17751f29efbb7796f7
+1/16/1 Done
+1/16/2 File - data_1.csv / Nodes - 16 / Column - 2
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 2
+I am rank 3 of 16
+I am rank 7 of 16
+I am rank 11 of 16
+I am rank 15 of 16
+I am rank 1 of 16
+I am rank 5 of 16
+I am rank 9 of 16
+I am rank 4 of 16
+I am rank 8 of 16
+I am rank 12 of 16
+I am rank 13 of 16
+I am rank 14 of 16
+I am rank 0 of 16
+I am rank 10 of 16
+input data: babbage-project-mpi/data_1.csv
+I am rank 2 of 16
+I am rank 6 of 16
+0 : e5461bc531985de3e36a28125d88c249
+1 : 586a5247c4d4ceff7a9ae8b9178a8273
+2 : 5a624a57a681ac7991b50acbb446826a
+3 : 10d04910eb16c99766c51d5806150c98
+4 : 272fc0ebd07113e5f409a49238ae6697
+5 : ad072c8d97e79040e490f35b5f7b199b
+6 : dc15dfc78620b5bfddd037fa22dbcb5f
+7 : ccb5d88c0d41353c382f0873cc85d81a
+8 : b18a61d2bcbc03645a3a13aaca24cb46
+9 : ddcaacaebc946eea0fcec9c742ad6cc3
+10 : 178019779233c5c93babb616e19ffbd0
+11 : 0000844aeaebb9f6f6088657c1cfaaac
+12 : e329c3c6b27d69fbad0e0443ceeb2c12
+13 : 8764d28895cb8276ef9ddedca7c5c37e
+14 : 0faceb755d16f564e2e982b2da3238fa
+15 : 5f8ab086e6464a9c6264b3ab62438bd9
+1/16/2 Done
+1/16/3 File - data_1.csv / Nodes - 16 / Column - 3
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 3
+I am rank 6 of 16
+I am rank 8 of 16
+I am rank 12 of 16
+I am rank 9 of 16
+I am rank 15 of 16
+I am rank 4 of 16
+I am rank 5 of 16
+I am rank 10 of 16
+I am rank 14 of 16
+I am rank 0 of 16
+input data: babbage-project-mpi/data_1.csv
+I am rank 2 of 16
+I am rank 11 of 16
+I am rank 1 of 16
+I am rank 13 of 16
+I am rank 7 of 16
+I am rank 3 of 16
+0 : 44306547f20339c77587150ba0c52656
+1 : c5d4e53d5e6e8fc288cd879471037d67
+2 : 4dcfac6dd67c2de5980fb4578962db8c
+3 : f1a1e4eeec86eab2f788a6b23ffb8b22
+4 : 4321738abf23497c7e5e94ad7d89177d
+5 : 663a72ff5592bec1d288ad9750504eaf
+6 : 55c90266956f8b48732c7c92115f698a
+7 : 3943b2cf1c6f8e254ba93f5c4c71493e
+8 : a3d1d84e5abe066c3c8b0cfb6b71fbf7
+9 : c5181a3aeaf917efbe1adb42f14e5532
+10 : 6521a68585355e720843bba8f274d932
+11 : 85d5b637ab6b767227e13dbbef3a402f
+12 : bebbf8b8aa06a825484db288b6dcc744
+13 : 52146515d5499e99b8b69bcd08d2ed96
+14 : 8dadf0b99ca77147ea9de08225fa9521
+15 : 6d1e38083748bdc5b346ba7c39ad2028
+1/16/3 Done
+1/32/1 File - data_1.csv / Nodes - 32 / Column - 1
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 1
+I am rank 28 of 32
+I am rank 10 of 32
+I am rank 18 of 32
+I am rank 22 of 32
+I am rank 23 of 32
+I am rank 2 of 32
+I am rank 3 of 32
+I am rank 4 of 32
+I am rank 5 of 32
+I am rank 6 of 32
+I am rank 7 of 32
+I am rank 9 of 32
+I am rank 11 of 32
+I am rank 13 of 32
+I am rank 14 of 32
+I am rank 15 of 32
+I am rank 24 of 32
+I am rank 26 of 32
+I am rank 27 of 32
+I am rank 0 of 32
+input data: babbage-project-mpi/data_1.csv
+I am rank 1 of 32
+I am rank 8 of 32
+I am rank 12 of 32
+I am rank 19 of 32
+I am rank 21 of 32
+I am rank 30 of 32
+I am rank 31 of 32
+I am rank 16 of 32
+I am rank 17 of 32
+I am rank 20 of 32
+I am rank 29 of 32
+I am rank 25 of 32
+0 : 0f0c990d71bb57a97ef61caec1c7d41a
+1 : 5689f35e91d7fb5c737d3ca423e34f41
+2 : a5da974d4eef652a58e8676e270f5672
+3 : fa8e089669604a969f9771c68a833bc2
+4 : c342a95eb3a9c57531cfeaa3e3c02d00
+5 : 45f2a5f3546fb425fd533217e43fd66a
+6 : 60a1e737fdedf446c3e675b69e11fa7e
+7 : 409ec77a0643137516cc14f08746b44c
+8 : 7ece7ff6f825bc482cd1783d1cbe4989
+9 : 3111535e1a0ecd84394c3dfb3f8e37a7
+10 : 8ae32b1a672fa0b19d8544ebe9e9f584
+11 : 9f85bcd455f3ccbbf2c9e222f1c103dc
+12 : 0f29c90e42d5e5965151e59853b4c844
+13 : 9b244ad8dfadf6584f009675c1257506
+14 : a1856da158e4f02217382c08ce44b232
+15 : 43d8f305322854d614e40e854a3067ed
+16 : c0955f2103fb3ff956f6cd24a99310e3
+17 : 9b1b0c06e88ea46e3282c251838e771f
+18 : f6fbe25c84209793f3cfbb2a3aa49732
+19 : 28ce2c97246a70c63c3677502fa84e0d
+20 : 29b953f631c51dc816c508b98d155f14
+21 : b77a20f622c994f32e09ae4f7f7686f0
+22 : 4a92ab38df3858a00fec8f6598e6e010
+23 : 341c605285d7cf04f439ab796fd20d32
+24 : 76db3d5df561aa9782170e9bb60c0325
+25 : 73e2aed25353cc904705e2e73ecad33b
+26 : a73ba17d40adc5b08ea99173efc893b0
+27 : 6891cea93456a2b02a81c425e00ad57e
+28 : 219f5ed6d1fc39c3419ac4a5b9ffd4f2
+29 : 7e1bd27dbf32c61ce90b062e8c095ec0
+30 : 5dcd87227dbe8b466b804fcaae536a8f
+31 : 114d0522e52b4066051fa8062204cbcb
+1/32/1 Done
+1/32/2 File - data_1.csv / Nodes - 32 / Column - 2
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 2
+I am rank 13 of 32
+I am rank 21 of 32
+I am rank 23 of 32
+I am rank 0 of 32
+input data: babbage-project-mpi/data_1.csv
+I am rank 1 of 32
+I am rank 5 of 32
+I am rank 6 of 32
+I am rank 27 of 32
+I am rank 4 of 32
+I am rank 7 of 32
+I am rank 8 of 32
+I am rank 9 of 32
+I am rank 10 of 32
+I am rank 17 of 32
+I am rank 19 of 32
+I am rank 22 of 32
+I am rank 24 of 32
+I am rank 25 of 32
+I am rank 31 of 32
+I am rank 3 of 32
+I am rank 12 of 32
+I am rank 18 of 32
+I am rank 28 of 32
+I am rank 29 of 32
+I am rank 30 of 32
+I am rank 11 of 32
+I am rank 26 of 32
+I am rank 14 of 32
+I am rank 2 of 32
+I am rank 15 of 32
+I am rank 16 of 32
+I am rank 20 of 32
+0 : b6e0a19d6a831a70304e328b7c24d2de
+1 : 9e0c56beed2b260dd5a0323c26f7978e
+2 : 15c31314b7cab04d11e4e0701d72f0db
+3 : 020e4b135fb92770ba4e78437a0a487b
+4 : ab9d0723899c045046140c9235794ebf
+5 : 98a07cf5a4682c789e1a258e1eea6c76
+6 : 64297d296760069e41d46fd0d343d7d2
+7 : 60ca2823849b700baa56003445fe800f
+8 : 18601972d0bbeafd803d048c35b4c374
+9 : 57c5cb6f88894452ddb060d894bdb339
+10 : a93fd46fa5ef8ce8ab73d1e7cadfc13a
+11 : b87b0003ff435f2a29d18144df75581d
+12 : 781c2704200cb041e76d7009c956e595
+13 : b357dbce20358402ddd668254f97e1b8
+14 : a82c5e38a68d2b3f6a7bddf4f6a6521c
+15 : 2bfd3dc88e4135201b81a155fda8059e
+16 : 7778b4b8c8249e5b3f6ce5b6d88a5e42
+17 : af8c9ab88336caa16af1fba91bfc88de
+18 : cffa6d56fc13677bdaf211ab97660d16
+19 : 78e5ac4f681b3345e1392febf4d1e64a
+20 : 58000fbcb95a9a86b6eea8b754a982d7
+21 : 7d4946ad30300ce450bee7f6fa1c5bbe
+22 : c205e0b9a1c83e68d66a4a30db33695a
+23 : 072574e0d909638b68d86111d0e5f49c
+24 : bf75f33024f91c2079b81561b2d6c32b
+25 : 2cf589c3302fe1e04a0f63e34031ca95
+26 : 04d53854b612e46ec298256b631b661e
+27 : 58c1d5bbbfd70b4ab7e70fdaf3ffd0df
+28 : 12889fe60c29f2ed41b621a8c3365f38
+29 : c0131e617f14772826986b0dcd550fd9
+30 : 819d07eb5b462ca626419108d527eb44
+31 : 81c2b6e8dd84a653509e0c727e2e04a5
+1/32/2 Done
+1/32/3 File - data_1.csv / Nodes - 32 / Column - 3
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_1.csv 3
+I am rank 11 of 32
+I am rank 1 of 32
+I am rank 3 of 32
+I am rank 15 of 32
+I am rank 5 of 32
+I am rank 8 of 32
+I am rank 9 of 32
+I am rank 16 of 32
+I am rank 18 of 32
+I am rank 20 of 32
+I am rank 26 of 32
+I am rank 28 of 32
+I am rank 31 of 32
+I am rank 0 of 32
+input data: babbage-project-mpi/data_1.csv
+I am rank 19 of 32
+I am rank 21 of 32
+I am rank 25 of 32
+I am rank 27 of 32
+I am rank 29 of 32
+I am rank 4 of 32
+I am rank 7 of 32
+I am rank 13 of 32
+I am rank 14 of 32
+I am rank 17 of 32
+I am rank 22 of 32
+I am rank 24 of 32
+I am rank 30 of 32
+I am rank 12 of 32
+I am rank 23 of 32
+I am rank 2 of 32
+I am rank 10 of 32
+I am rank 6 of 32
+0 : 3e70dcde8ffaaa1fef729229dacf464a
+1 : 5f9c443085ea45851a44bfa73392a1f8
+2 : f57fed631c333dbe93d8c54ee10d3b7d
+3 : 4e3d1116567322c27f1e640ea5433b68
+4 : 7e69353f7ac5b40d940852afa9f58357
+5 : 23b7cf829c766e8bf151d781b4d38c95
+6 : b0cd41b5e4f942ceb5d81d514f291af7
+7 : bb9e507b2020f57e726bccc59175ecc0
+8 : 90e60a9e4ad7ba30e0cacd9bf56b7bd9
+9 : 6d8b771c9a47d6f8ab36a4809f84e3f6
+10 : 3e0c84eba41408421159a447f6386ea6
+11 : 13f092a8368a226a5fcd09ee49626e05
+12 : a2858fa8bae4db846d8a09122dd52815
+13 : 26300f952177b2dd742a4ddb66a582bb
+14 : 4c6845d1f62a9c7e93fb3d970461af53
+15 : 284b8de6a99c671dc73d1565a7d3f294
+16 : e54c3a97eb4273a8ca72994c412e4ce6
+17 : f1e4f64dd602e93646e75679c837b58d
+18 : b39d02d3dfe97823b9c341754b181f50
+19 : 946f1ad4adf99c7a31e73559c4a979b4
+20 : 41b21c470b6ee8a39b070273874ec829
+21 : 9cd841326e77aca56bf10980bdd03028
+22 : eef49909d98038f2ee28ba3185366cc2
+23 : d3d223b6257bd23ea867b44b08f767c2
+24 : c779cb90925b3eb7c869fcfb7b28a8f0
+25 : 66f795de4d11f81f92ddf020dbad8a35
+26 : 8a5da4b5f01cfb723ad751c521e224f1
+27 : ddc478276df0ed417628b6d3a646f23c
+28 : ac2e3e90ed837fd173045721684260b0
+29 : 41bb27d5be808709f5ada239e0758028
+30 : 3e1c451eb871c7c73058aff08f8e1e22
+31 : db10d4a1c31d3e187fe0a73e94e353ba
+1/32/3 Done
+2/1/1 File - data_2.csv / Nodes - 1 / Column - 1
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 1
+I am rank 0 of 1
+input data: babbage-project-mpi/data_2.csv
+0 : 4968e856c4b478cdc46e65560f2db630
+2/1/1 Done
+2/1/2 File - data_2.csv / Nodes - 1 / Column - 2
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 2
+I am rank 0 of 1
+input data: babbage-project-mpi/data_2.csv
+0 : 66bd1e0f40262a46420a524040188cb0
+2/1/2 Done
+2/1/3 File - data_2.csv / Nodes - 1 / Column - 3
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 3
+I am rank 0 of 1
+input data: babbage-project-mpi/data_2.csv
+0 : facfd55aa186a650fc39e7620c5b5842
+2/1/3 Done
+2/2/1 File - data_2.csv / Nodes - 2 / Column - 1
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 1
+I am rank 0 of 2
+input data: babbage-project-mpi/data_2.csv
+I am rank 1 of 2
+0 : 76f18189ec21ace07bf4b557bb76b3a8
+1 : 153442aa2d9fb46063505d266ac4f26f
+2/2/1 Done
+2/2/2 File - data_2.csv / Nodes - 2 / Column - 2
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 2
+I am rank 0 of 2
+input data: babbage-project-mpi/data_2.csv
+I am rank 1 of 2
+0 : 7891de50e54e06ec809ce46f2e9e2860
+1 : b13d339443b18cfe2b2769a1da940deb
+2/2/2 Done
+2/2/3 File - data_2.csv / Nodes - 2 / Column - 3
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 3
+I am rank 0 of 2
+input data: babbage-project-mpi/data_2.csv
+I am rank 1 of 2
+0 : 507de0df1642526ea40bddd711550267
+1 : f7c44e3fb64639ab751db559bd211195
+2/2/3 Done
+2/4/1 File - data_2.csv / Nodes - 4 / Column - 1
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 1
+I am rank 2 of 4
+I am rank 0 of 4
+input data: babbage-project-mpi/data_2.csv
+I am rank 3 of 4
+I am rank 1 of 4
+0 : 20034a210eaf504314d64b588d479b17
+1 : ba319c9810e6627f06f031a3c1a05b04
+2 : c11ad1a36ae7d0b65b03725dd40270e0
+3 : f22f460da92635f9f86c22aafbbe8cb8
+2/4/1 Done
+2/4/2 File - data_2.csv / Nodes - 4 / Column - 2
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 2
+I am rank 0 of 4
+I am rank 2 of 4
+input data: babbage-project-mpi/data_2.csv
+I am rank 1 of 4
+I am rank 3 of 4
+0 : f7412219552e5f43c4f56f0460ac982f
+1 : 96732b38f023519435de11fe8bb36c78
+2 : 9a6d3672e282455cdb51ca9feb201f71
+3 : c3a1a53bc649fda64819e5d30ed62b44
+2/4/2 Done
+2/4/3 File - data_2.csv / Nodes - 4 / Column - 3
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 3
+I am rank 2 of 4
+I am rank 0 of 4
+input data: babbage-project-mpi/data_2.csv
+I am rank 1 of 4
+I am rank 3 of 4
+0 : 88873782180b1ae0f4a8238e31064355
+1 : f6a6c1f33ec5e3d80d2910ae206c8169
+2 : 28c5eebec52073eb241c884bd9a94e92
+3 : 71a18bda9a6e43408de7cbf8eb3f6d8c
+2/4/3 Done
+2/8/1 File - data_2.csv / Nodes - 8 / Column - 1
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 1
+I am rank 7 of 8
+I am rank 5 of 8
+I am rank 4 of 8
+I am rank 6 of 8
+I am rank 0 of 8
+I am rank 2 of 8
+I am rank 1 of 8
+input data: babbage-project-mpi/data_2.csv
+I am rank 3 of 8
+0 : 454f06f23d204ded7c69c79a05acd236
+1 : 95226e69dd9a687abffb507f800dcc03
+2 : 0fc3ddbdf1ae576ae58067ecc7aa0ec7
+3 : de9a1e14a58b54acd7dcce632d09a602
+4 : 2f1397e5b35ddd101a26f53b5be8e11a
+5 : d20f6acd78bba9037f5e9639cbb91f5a
+6 : d5b3c469d4ae85b810a5299fa0389610
+7 : b22d7c467f4d68b62e264348f754d1e2
+2/8/1 Done
+2/8/2 File - data_2.csv / Nodes - 8 / Column - 2
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 2
+I am rank 1 of 8
+I am rank 2 of 8
+I am rank 6 of 8
+I am rank 0 of 8
+I am rank 4 of 8
+I am rank 5 of 8
+I am rank 7 of 8
+input data: babbage-project-mpi/data_2.csv
+I am rank 3 of 8
+0 : 46c14c17c041c126399c18b5ac5fc497
+1 : 2e1e920023e68c08a5f30498b92991ba
+2 : 41e246eab12934c101c63700850039bd
+3 : 6e3b57b5e684a35a7d540191b91d3ef7
+4 : e45ca202711da2e7ad76cbd575763f39
+5 : 8090bd65e71fc60fcd52d587cac32b17
+6 : 07ea20781d5ec25b635d30380af11864
+7 : de5688b1db157150b4210eb4c2357b8f
+2/8/2 Done
+2/8/3 File - data_2.csv / Nodes - 8 / Column - 3
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 3
+I am rank 3 of 8
+I am rank 7 of 8
+I am rank 1 of 8
+I am rank 0 of 8
+input data: babbage-project-mpi/data_2.csv
+I am rank 2 of 8
+I am rank 5 of 8
+I am rank 6 of 8
+I am rank 4 of 8
+0 : 9d2a537ee2743dab65309ce662281d97
+1 : b29094887d6b63c7291281f4f60200c7
+2 : 3fbcb36c09646a6657ac651507b6f3f0
+3 : ae8de925193c33cb385e6517e8b1483b
+4 : 96e59333f8eba426b15cd04b8e844667
+5 : 067361e70807c0b66440dbecf775a7f3
+6 : 1a00e209b73de1fe9cea088db33997aa
+7 : 4fee61641f6a1e4b6f71eb0777957a97
+2/8/3 Done
+2/16/1 File - data_2.csv / Nodes - 16 / Column - 1
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 1
+I am rank 0 of 16
+input data: babbage-project-mpi/data_2.csv
+I am rank 1 of 16
+I am rank 3 of 16
+I am rank 6 of 16
+I am rank 7 of 16
+I am rank 10 of 16
+I am rank 15 of 16
+I am rank 9 of 16
+I am rank 11 of 16
+I am rank 12 of 16
+I am rank 5 of 16
+I am rank 13 of 16
+I am rank 2 of 16
+I am rank 8 of 16
+I am rank 4 of 16
+I am rank 14 of 16
+0 : 481bca36c881050fa9e4af759b35151d
+1 : 987fc28b15bb49ec422d4463e02307c2
+2 : e07481bb63cdcc8f9a23364d1214b844
+3 : 68c3d57944eb1892d9d1e364e2ecd001
+4 : 2928ad78e66831e46d15bb1d02afc8ce
+5 : d5030005899f9490ff494d29ffdd55ba
+6 : d83abe6a2c7f0d3f5c27512ab034b388
+7 : af188d72a08b9da4141dd4d221b7fcac
+8 : 39173bc55539b32e094fcec8ca60d0ed
+9 : f7d416ee8a57ae2d4b1a505805cb1be4
+10 : 8ce6d194a69421e91eefc57ea189b7a6
+11 : 19cc8f09203da63297633e7e529b8992
+12 : fa113ddb76bfea8bbf9e6470167d3d54
+13 : fc05c59463537d62f79f2101067c28a2
+14 : 36ba1a9fd5c536069d3a40d57f0cb1ee
+15 : 147570614d4cfad37e178e976f135522
+2/16/1 Done
+2/16/2 File - data_2.csv / Nodes - 16 / Column - 2
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 2
+I am rank 6 of 16
+I am rank 8 of 16
+I am rank 14 of 16
+I am rank 1 of 16
+I am rank 3 of 16
+I am rank 4 of 16
+I am rank 7 of 16
+I am rank 9 of 16
+I am rank 11 of 16
+I am rank 2 of 16
+I am rank 5 of 16
+I am rank 0 of 16
+I am rank 10 of 16
+I am rank 12 of 16
+I am rank 13 of 16
+I am rank 15 of 16
+input data: babbage-project-mpi/data_2.csv
+0 : 31f638456e36640babc76186dab2cb54
+1 : e3dd8d9cf77129ec968046528f09e992
+2 : d2d899f4b35a889d2be186d75550e8ca
+3 : 7a93f24e42a7b47905c8d995fe5b8950
+4 : 365250accca6431f036c9f765d079582
+5 : 98e9a0aba08e3081020f0af5b26b39d3
+6 : 0c1c2b52791fdc908c15e4e5cd925f71
+7 : 1486f5a138d46aa9e14f9ee5cb19e80a
+8 : d26cbce20ebdc9c61605e53e62fc1be0
+9 : 775666864a64d91981927a37292291b6
+10 : 304d5bed2d2ed3e136de3993fe313a5b
+11 : 30e630da23201dd3b922f965e70806c2
+12 : 821468da7035f3152835aed30ab9ca3c
+13 : 382f9c71b7fe6fa72bccaa1e6f6df241
+14 : 76f20098b3c10a000a40f915e09425f2
+15 : 9cee2208c81d49a6d787d9c446a2ec00
+2/16/2 Done
+2/16/3 File - data_2.csv / Nodes - 16 / Column - 3
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 3
+I am rank 1 of 16
+I am rank 4 of 16
+I am rank 8 of 16
+I am rank 9 of 16
+I am rank 12 of 16
+I am rank 14 of 16
+I am rank 0 of 16
+I am rank 2 of 16
+I am rank 3 of 16
+I am rank 10 of 16
+I am rank 11 of 16
+I am rank 15 of 16
+input data: babbage-project-mpi/data_2.csv
+I am rank 5 of 16
+I am rank 6 of 16
+I am rank 13 of 16
+I am rank 7 of 16
+0 : 81c419b14801ebdb85b3eee7de3b8938
+1 : c29c381b7a596c4b2fb30f371a56ccc6
+2 : 6d71253aa95ea667289fbe08c79606fc
+3 : be5b797ff1783c851d553b3be38be63a
+4 : 1af29da21e2db15f4c10d540819e008a
+5 : c6a92660205596101d2bdf82e61d6e14
+6 : a21bfa98cdb58261dd845a0815678357
+7 : 0ef13a03956431ac2eb691b122a72223
+8 : 0895c78abb12b18a8efe987f34ed5ee3
+9 : 19e3a9f0954b50a262729036985d0e80
+10 : 2adfa6ece5606f53ec3b7955d18c73f1
+11 : 3cdfa73a79b1abc4803352ed9558065c
+12 : 2932daf91e11a710f8d7e05b9fcc3f6b
+13 : 69d41502b0558f24459326d46fd06073
+14 : f1817a201cf78d46f913d1f466b45771
+15 : d607359d0d63a7251b8e246daae9dc3e
+2/16/3 Done
+2/32/1 File - data_2.csv / Nodes - 32 / Column - 1
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 1
+I am rank 11 of 32
+I am rank 17 of 32
+I am rank 4 of 32
+I am rank 20 of 32
+I am rank 21 of 32
+I am rank 23 of 32
+I am rank 24 of 32
+I am rank 26 of 32
+I am rank 28 of 32
+I am rank 1 of 32
+I am rank 6 of 32
+I am rank 8 of 32
+I am rank 10 of 32
+I am rank 12 of 32
+I am rank 14 of 32
+I am rank 16 of 32
+I am rank 18 of 32
+I am rank 22 of 32
+I am rank 25 of 32
+I am rank 27 of 32
+I am rank 29 of 32
+I am rank 30 of 32
+I am rank 31 of 32
+I am rank 2 of 32
+I am rank 3 of 32
+I am rank 7 of 32
+I am rank 15 of 32
+I am rank 19 of 32
+I am rank 9 of 32
+I am rank 0 of 32
+input data: babbage-project-mpi/data_2.csv
+I am rank 5 of 32
+I am rank 13 of 32
+0 : 6f20a27950a3632964efffdd23918837
+1 : 52be26945efcf8173ac48361cf9fae01
+2 : 70928c277ef1b4342907e3322c62974f
+3 : 1eafe5d57db259befbdbbdc8a6de9791
+4 : e9e51c00bda5787f92015b3d032800a4
+5 : 1c5219e0139fb8253640f94dfed624df
+6 : 4f09768ff2a4f7f76ccfacaf0d810013
+7 : d707a8e0cc0eb31d6abe35262c8b7ce0
+8 : 276954ae8055f3542bf9365035c515b9
+9 : 4e0a1a268db607051875c9982bfb2f5a
+10 : 1b1d8957b351d919ea02aea325c6c932
+11 : 1fabf90d79c825c62e47d76f5608b00a
+12 : 132406a7c2e6689f37f9381462ca0f77
+13 : 65bb5c61985c00475093daab11246446
+14 : 17333fcd194183d873c7d0e0e23b33bd
+15 : 6805801860fd7cf1914c4e3ad4f7e4ea
+16 : c0eabac52f29189da56f91cf400da099
+17 : c3198e64844298d13ed3e67a21f23341
+18 : 99a118d2f04213acf85cb893a6175f88
+19 : 971872262623fec2ab9cde0a7a4a9903
+20 : 8bf77fdf3ec2dc2803f68798afc58895
+21 : 0c554bf78657e84b2cc0244baf8f4b76
+22 : c6bcabb69c193f0b01309b4148ea826f
+23 : 71a8cbeb1b72e0bc3c6dcffbcf341fba
+24 : a327b1e24ef641f69708068299899b86
+25 : a88a1567b4a5bcef05a77f5d6ee924c1
+26 : 4eea5664cc5d95b8ae3e6a9f1f78b99b
+27 : 10a72a6c760611ecc9265379f7683cc9
+28 : e93697f0416dba8c7d666e9dead6d4f7
+29 : db31d6f14e43c56d5402ffc3f4763fdc
+30 : d92ff13ad2aa463fa7b56a54559d8d2c
+31 : 68a66157c8d95b64eb99ca12936f451f
+2/32/1 Done
+2/32/2 File - data_2.csv / Nodes - 32 / Column - 2
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 2
+I am rank 2 of 32
+I am rank 5 of 32
+I am rank 6 of 32
+I am rank 10 of 32
+I am rank 14 of 32
+I am rank 17 of 32
+I am rank 21 of 32
+I am rank 23 of 32
+I am rank 28 of 32
+I am rank 29 of 32
+I am rank 31 of 32
+I am rank 1 of 32
+I am rank 3 of 32
+I am rank 4 of 32
+I am rank 7 of 32
+I am rank 11 of 32
+I am rank 12 of 32
+I am rank 13 of 32
+I am rank 15 of 32
+I am rank 18 of 32
+I am rank 19 of 32
+I am rank 20 of 32
+I am rank 24 of 32
+I am rank 27 of 32
+I am rank 30 of 32
+I am rank 0 of 32
+input data: babbage-project-mpi/data_2.csv
+I am rank 9 of 32
+I am rank 8 of 32
+I am rank 26 of 32
+I am rank 16 of 32
+I am rank 25 of 32
+I am rank 22 of 32
+0 : f55a3ce1f44033909154ffd7be2b8d42
+1 : e9d87b1d6c023d1e4661097505d578e7
+2 : a86b754aa5fc87cb734bc32dfb116bb7
+3 : 0893390548391b1deb4487cd1b12aba8
+4 : 4d93d1caed01f70993a658bc04265088
+5 : 9e8d94ff1f40579d18326bc893bc76eb
+6 : 5944541ee23e05f2ebf914dd411c8370
+7 : ca71e64ff290e6a2249b93578c869223
+8 : 577ef90bfdb82d71037f73f1fa7c13b2
+9 : 1f8b61815bc631b8994c567f32a19cdf
+10 : 6145064618ebe595e2fcb394739ae50c
+11 : db6fdab0a389b66def17813a1c8166ee
+12 : 5cb46733778ccefab019e1df0c4cd64b
+13 : 02c85095ee946cbbc275c95a07b5a609
+14 : 040f5ec3225e4e410871e12806708936
+15 : a9843edac89eb619c823805c5a5294fd
+16 : 8991675dce6e6d98f4636e399c7211f6
+17 : 2f4fc9f8b6e7ae3863a31ca52d8991eb
+18 : 2934e0b7203ccb12261728b7152e9be0
+19 : 4f37fa042c0135158f255a4f5734c162
+20 : f5080604f663614a94fa6149a04b3cca
+21 : 6feb309cea3005daf9ef326ab2490c6b
+22 : 17a5443b8136b2af575c8c12b3521f17
+23 : b83aab5d10ad84786e2a960d029d3194
+24 : bfce75cbb90248a20de1b97c15e5389c
+25 : 3a527e7672e6763e1e9f08d26abdee99
+26 : 905350fd63946a1b6bed2602018769a3
+27 : 516945e66b5a7168edb9ff76d39f5b30
+28 : 9b390bc430978ace717977abf7898f13
+29 : 4b6b1a3c7b1463b88555d86e858b3861
+30 : 38d72b698c9cd5f46f0365ce15cc1875
+31 : 0976d6cad645de3a12fa286cd207fa69
+2/32/2 Done
+2/32/3 File - data_2.csv / Nodes - 32 / Column - 3
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_2.csv 3
+I am rank 4 of 32
+I am rank 14 of 32
+I am rank 23 of 32
+I am rank 3 of 32
+I am rank 15 of 32
+I am rank 20 of 32
+I am rank 22 of 32
+I am rank 27 of 32
+I am rank 1 of 32
+I am rank 5 of 32
+I am rank 6 of 32
+I am rank 7 of 32
+I am rank 8 of 32
+I am rank 9 of 32
+I am rank 13 of 32
+I am rank 16 of 32
+I am rank 17 of 32
+I am rank 18 of 32
+I am rank 21 of 32
+I am rank 26 of 32
+I am rank 28 of 32
+I am rank 30 of 32
+I am rank 31 of 32
+I am rank 2 of 32
+I am rank 10 of 32
+I am rank 19 of 32
+I am rank 25 of 32
+I am rank 11 of 32
+I am rank 0 of 32
+I am rank 12 of 32
+input data: babbage-project-mpi/data_2.csv
+I am rank 29 of 32
+I am rank 24 of 32
+0 : f1d61d2ea079a911bd4e808722c159a2
+1 : 77b356eccf9d919cf7ae4489bd0da4e0
+2 : ac689e165327414ebbfc79d6a145f532
+3 : 69845e80b59cbb264a56f93f76911616
+4 : 24055d40bcadb79e7fcf97ac4f2f6c21
+5 : 61ff6812b510eba53c8529e9b58021e7
+6 : 590194aff387b35c4e82458d3fb15d13
+7 : e79dd6d5c75a94589bc326f01bbda60d
+8 : dace03a6d6efe2c349d9a65e9e722c30
+9 : f4653a5827684ceb36bdf11a64b16937
+10 : 3e392935a252105eec8b1ffeaea0a70a
+11 : 278c7e5cfd3572fb8b72a4519f0cd964
+12 : e161870c9ec13323a71cb85d1e13a06e
+13 : dab548a0adcdd297d1830fd29c25e3a6
+14 : a200e1598787bb1ffcd10c738aafb8ff
+15 : 2755c561973f7371edfc94e6f6a6d814
+16 : 30d4f2a586200aa6cac27c1b6b924a98
+17 : 3e60c22bc85a947622260e9606da0235
+18 : 232cd00e25aa720f45d9bd2840fe276e
+19 : 064ae655bf3ca92f1e0aca5d24edf2a6
+20 : 7d97e82252c79e9b7ecb0fee35534964
+21 : ea2782928ff30c8667ff623e1cfb7007
+22 : 060251e35ccc1429f31be678f4fa93b6
+23 : 448183104de3a501e107ef7e1e8db020
+24 : 1a75738d1272140fcc1c8fe66cc4247f
+25 : 96bd3260b209e2ba1843c87418feae40
+26 : e04b4f7b048e19a7c841b69c2b9308f7
+27 : 628f6396d174c5c4953d26cfd1bfec9a
+28 : f3b4693782f7382d532737727f45be57
+29 : c4edd01830238da3da2deafc583ead92
+30 : 899ad382952fc50e0f8a70face8c9b9c
+31 : f4c5c72e4c1e8277e1fcedba5367c4f1
+2/32/3 Done
+3/1/1 File - data_3.csv / Nodes - 1 / Column - 1
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 1
+I am rank 0 of 1
+input data: babbage-project-mpi/data_3.csv
+0 : 66a32937d459650684a4412f288b8896
+3/1/1 Done
+3/1/2 File - data_3.csv / Nodes - 1 / Column - 2
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 2
+I am rank 0 of 1
+input data: babbage-project-mpi/data_3.csv
+0 : 1de6b6ee3a40b9bd40b9696b10f14bb8
+3/1/2 Done
+3/1/3 File - data_3.csv / Nodes - 1 / Column - 3
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 3
+I am rank 0 of 1
+input data: babbage-project-mpi/data_3.csv
+0 : 2108a03e1ec26b798de670c0185338cc
+3/1/3 Done
+3/2/1 File - data_3.csv / Nodes - 2 / Column - 1
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 1
+I am rank 0 of 2
+input data: babbage-project-mpi/data_3.csv
+I am rank 1 of 2
+0 : 67afe173cb3627d5a6fe61a354d8a3d4
+1 : d885ff6095750964f5f55d22781ed97e
+3/2/1 Done
+3/2/2 File - data_3.csv / Nodes - 2 / Column - 2
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 2
+I am rank 0 of 2
+input data: babbage-project-mpi/data_3.csv
+I am rank 1 of 2
+0 : 0f434badeb1969cc60a5ce3f255b88f8
+1 : bae89fcaa23c72eff22caa9832efc8f2
+3/2/2 Done
+3/2/3 File - data_3.csv / Nodes - 2 / Column - 3
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 3
+I am rank 0 of 2
+I am rank 1 of 2
+input data: babbage-project-mpi/data_3.csv
+0 : 2936bb15c23bbecddad7691fd0dc2ac6
+1 : 457ff56d8a9450521e11352228740d0f
+3/2/3 Done
+3/4/1 File - data_3.csv / Nodes - 4 / Column - 1
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 1
+I am rank 0 of 4
+input data: babbage-project-mpi/data_3.csv
+I am rank 1 of 4
+I am rank 3 of 4
+I am rank 2 of 4
+0 : 98eeb537dd3139253262fc37c4dd4b3f
+1 : bfeb07cf3776a575a0785698aa08bd9c
+2 : 8589f280eaacdb3301e7f2a1444489f7
+3 : 9f88a7f7462b2d022027975094562cf4
+3/4/1 Done
+3/4/2 File - data_3.csv / Nodes - 4 / Column - 2
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 2
+I am rank 2 of 4
+I am rank 3 of 4
+I am rank 0 of 4
+input data: babbage-project-mpi/data_3.csv
+I am rank 1 of 4
+0 : 20799b5c02ea7cc45302424ea6769a02
+1 : a71b6d2e78dffa5ee42b4534ed270e0a
+2 : 30f197ac1db3f2fdb1087b2f5fa7ae84
+3 : 2770c1699f6a7af6d9f920e6723d9b3f
+3/4/2 Done
+3/4/3 File - data_3.csv / Nodes - 4 / Column - 3
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 3
+I am rank 0 of 4
+input data: babbage-project-mpi/data_3.csv
+I am rank 2 of 4
+I am rank 3 of 4
+I am rank 1 of 4
+0 : 8e7a3af7a0c3910566a5536e6fbe4a1b
+1 : 7b223a29b4cb1b5d512cd5abde1dabe4
+2 : 2bec2b38f654d05a503f3a03c0389ee4
+3 : c0aef5aa247710738171531e0a78467f
+3/4/3 Done
+3/8/1 File - data_3.csv / Nodes - 8 / Column - 1
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 1
+I am rank 0 of 8
+I am rank 1 of 8
+I am rank 4 of 8
+I am rank 5 of 8
+input data: babbage-project-mpi/data_3.csv
+I am rank 3 of 8
+I am rank 2 of 8
+I am rank 6 of 8
+I am rank 7 of 8
+0 : 1a267e71e1f14d057a01a48cac837c23
+1 : f788cecabe23a50b8955fd1a9323bd9e
+2 : 482d00099a2a7d23371910f9a8e1bd81
+3 : 28c27c357352f0e086389fc7da14073a
+4 : 745644a8a62e51e048a83f16300c4408
+5 : a22aa108afc2c52f1f60d8a138f22ea8
+6 : f18f77224dbfb9683d12033fd4cf1648
+7 : c253858bac7d99403c88683b7d121244
+3/8/1 Done
+3/8/2 File - data_3.csv / Nodes - 8 / Column - 2
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 2
+I am rank 0 of 8
+input data: babbage-project-mpi/data_3.csv
+I am rank 1 of 8
+I am rank 2 of 8
+I am rank 4 of 8
+I am rank 5 of 8
+I am rank 6 of 8
+I am rank 3 of 8
+I am rank 7 of 8
+0 : 4e8e58525f607721288f521fde74f4d4
+1 : d43b4e8ab940341c503cf84dedee4695
+2 : e57c08df99c498fd6d4f973f83339f6d
+3 : 0f3cb59c17b4f828c1125bb67a6c4d58
+4 : c241ec6399d45fb829b8cc4be5eda5d8
+5 : 048ba0eae318efd5ace69032a8d3732a
+6 : 4d7680a63c16cc6653bf291b26ffe1d2
+7 : 5be8268373c1130b1fd350d28dd3ed8f
+3/8/2 Done
+3/8/3 File - data_3.csv / Nodes - 8 / Column - 3
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 3
+I am rank 0 of 8
+input data: babbage-project-mpi/data_3.csv
+I am rank 1 of 8
+I am rank 5 of 8
+I am rank 7 of 8
+I am rank 2 of 8
+I am rank 3 of 8
+I am rank 4 of 8
+I am rank 6 of 8
+0 : bee85179b116327dbdaee2ee80e261b9
+1 : 451098b126bbd80d050273dc4c1933c9
+2 : 4bb7583209dd5a6bcfb3bf4ef1d23734
+3 : 33b638c10ddda4f30321efd53943dcd7
+4 : be69afd1a86d8a4bd95a3f0a1cdda9d4
+5 : a7e77674d498889e846ab6ffe84261cb
+6 : c3e38a4f91438ed36c559f780bab0967
+7 : 4af9e5d240b364115800cde9a8e70498
+3/8/3 Done
+3/16/1 File - data_3.csv / Nodes - 16 / Column - 1
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 1
+I am rank 1 of 16
+I am rank 2 of 16
+I am rank 4 of 16
+I am rank 6 of 16
+I am rank 7 of 16
+I am rank 8 of 16
+I am rank 13 of 16
+I am rank 14 of 16
+I am rank 15 of 16
+I am rank 0 of 16
+I am rank 10 of 16
+I am rank 3 of 16
+I am rank 5 of 16
+I am rank 9 of 16
+input data: babbage-project-mpi/data_3.csv
+I am rank 11 of 16
+I am rank 12 of 16
+0 : 6f6841168303cb010e1469125570837d
+1 : 5db837854b0a048f078963a6a66c56ce
+2 : a825d286c444a6347b65e2ecb3fd39b4
+3 : f43717dbc08b73bd072dcfe7bb6b3e4e
+4 : ae68daa7ff243a7b05288286ce83d13f
+5 : a3bc913b32527943aef9419314113a1a
+6 : 52696faf4863310396b03301ed71479e
+7 : 03e9be145b97ac0527adc73341636ad4
+8 : 9e021ddf47fd426b7b2b05e7ae1096b1
+9 : 00ed8a1a26ed540f4e0d98a9fd6a66fd
+10 : 1958ded3d591e01c70874823e5f2cc12
+11 : 18b73a6daf1f615f2ab4c43a4ec827e5
+12 : 33f825a4d5316f1a59dad6496d1b64ec
+13 : 84c3a18c02806bdc1c161e73e151bf6f
+14 : f69c736bfb7078129323eff1dc509d37
+15 : 3576bd393f98bae0c1ef7210a1eb43ad
+3/16/1 Done
+3/16/2 File - data_3.csv / Nodes - 16 / Column - 2
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 2
+I am rank 0 of 16
+input data: babbage-project-mpi/data_3.csv
+I am rank 4 of 16
+I am rank 8 of 16
+I am rank 9 of 16
+I am rank 10 of 16
+I am rank 11 of 16
+I am rank 12 of 16
+I am rank 13 of 16
+I am rank 15 of 16
+I am rank 2 of 16
+I am rank 3 of 16
+I am rank 5 of 16
+I am rank 6 of 16
+I am rank 14 of 16
+I am rank 1 of 16
+I am rank 7 of 16
+0 : 7338438fe5e33f96f8af819d1636d274
+1 : a1e1709e894caae6fcf0a178725869dc
+2 : 9bda1426ba014459cbe337053ce22ca8
+3 : db2687cfe5210d0027809ac51a601fe3
+4 : 7a3168ec8b41a490eb81ab36e725b580
+5 : 6abb192dd6943f1189dbb460a045e858
+6 : be47be768a733e20b0708b325230ff71
+7 : 65c2a4a7cab7b0b976cbad5b67c1e93c
+8 : 14943ca4c0ab89610eba3f77af1c2e21
+9 : eba914958182f0d5c17dde71a10813a4
+10 : 9ed9b60ce36819506222175bfe56391f
+11 : 7b8e3bc406100e5168e2985abd0c7f6a
+12 : 9c5d3f401cc608d3d99afef5681844d8
+13 : ce7702ea1624e5534676f57ad4646a2d
+14 : b8a9e4da9a3b6fd977f88dc10c756d07
+15 : 8f1164de4a623e143634570ec4e2194a
+3/16/2 Done
+3/16/3 File - data_3.csv / Nodes - 16 / Column - 3
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 3
+I am rank 1 of 16
+I am rank 3 of 16
+I am rank 4 of 16
+I am rank 7 of 16
+I am rank 8 of 16
+I am rank 10 of 16
+I am rank 12 of 16
+I am rank 13 of 16
+I am rank 15 of 16
+I am rank 9 of 16
+I am rank 5 of 16
+I am rank 11 of 16
+I am rank 14 of 16
+I am rank 0 of 16
+I am rank 2 of 16
+I am rank 6 of 16
+input data: babbage-project-mpi/data_3.csv
+0 : 48cf6e1a6413f373449254981b33384d
+1 : bae3e59c388b78f4552a3dc1295036c6
+2 : 520e65c688c2e86d7fa9d34961b2aaa6
+3 : e073ac5230a12e4fb942a8d4f62b6545
+4 : 1f823aa2aca9e023958da2d5a03c8f9a
+5 : 5bbdecdc033aa99612c6ebd9ab21a71f
+6 : 97be52b9ce8295a538202aeb5413e56a
+7 : dbcf70af92e07330e54bcb4e0a633f07
+8 : 9c66ade55866d46122d3a5d0e76bf988
+9 : 516344691653ca89e4e4630fd9307345
+10 : ed3609fb17fb5db82959d1c35f22d79e
+11 : c65c73f1c1da12c6834f320ff2ecb96a
+12 : 20f4700c5a3c0997241034698add7c49
+13 : f117c94df6494599a09d420e9f5e1e16
+14 : 66b921c3e836b74d5f3e80f378ba063d
+15 : b8e6549a28e328d9a7baa90a96da5925
+3/16/3 Done
+3/32/1 File - data_3.csv / Nodes - 32 / Column - 1
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 1
+I am rank 2 of 32
+I am rank 3 of 32
+I am rank 6 of 32
+I am rank 17 of 32
+I am rank 21 of 32
+I am rank 26 of 32
+I am rank 4 of 32
+I am rank 16 of 32
+I am rank 18 of 32
+I am rank 19 of 32
+I am rank 22 of 32
+I am rank 28 of 32
+I am rank 29 of 32
+I am rank 30 of 32
+I am rank 31 of 32
+I am rank 5 of 32
+I am rank 8 of 32
+I am rank 10 of 32
+I am rank 11 of 32
+I am rank 13 of 32
+I am rank 23 of 32
+I am rank 24 of 32
+I am rank 25 of 32
+I am rank 27 of 32
+I am rank 0 of 32
+I am rank 15 of 32
+input data: babbage-project-mpi/data_3.csv
+I am rank 20 of 32
+I am rank 12 of 32
+I am rank 1 of 32
+I am rank 9 of 32
+I am rank 14 of 32
+I am rank 7 of 32
+0 : 6f6841168303cb010e1469125570837d
+1 : 951c5033d719a537d49e28939e777c08
+2 : 5db837854b0a048f078963a6a66c56ce
+3 : 2281c8cd08f3013a549ed7e12f75557b
+4 : a825d286c444a6347b65e2ecb3fd39b4
+5 : a3055f9deb72576b21dd9bc676bc6f44
+6 : f43717dbc08b73bd072dcfe7bb6b3e4e
+7 : ef9ce336eb90f8dca90339ebd345bb43
+8 : ae68daa7ff243a7b05288286ce83d13f
+9 : 0fb79b4b992b3e8d56bd58920db18d5a
+10 : 625095c52c86a96db1b40101d565b1cf
+11 : 4901ec2b8e15554771794a5245718750
+12 : 52696faf4863310396b03301ed71479e
+13 : 27d72263b852d15a28c743aac8bf744b
+14 : 03e9be145b97ac0527adc73341636ad4
+15 : 2f8884ae5d77310d5fa304645dfd9f66
+16 : 9e021ddf47fd426b7b2b05e7ae1096b1
+17 : 87e42f8dd0f14ea594180b886cabebe6
+18 : 075f33daee396aa33ffae9624b7ffec2
+19 : 568895c7435947c8dba19ae8d45d18d2
+20 : 1958ded3d591e01c70874823e5f2cc12
+21 : f320e7094f7568bd25e6058dd20a395a
+22 : 18b73a6daf1f615f2ab4c43a4ec827e5
+23 : a59e48058babaf745915bd8c736d62e0
+24 : 33f825a4d5316f1a59dad6496d1b64ec
+25 : dfbc4563cce111100660ff30e9abc7a8
+26 : e73b6e93fafb88659a6d20eb2a152190
+27 : 7c55d9480b6d932f134ee49624c13dbc
+28 : f69c736bfb7078129323eff1dc509d37
+29 : fc9819fa680af3a215071d4337375ba2
+30 : 3576bd393f98bae0c1ef7210a1eb43ad
+31 : da6e0b72d3c49b7f47c981210d4ec9be
+3/32/1 Done
+3/32/2 File - data_3.csv / Nodes - 32 / Column - 2
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 2
+I am rank 6 of 32
+I am rank 8 of 32
+I am rank 17 of 32
+I am rank 24 of 32
+I am rank 25 of 32
+I am rank 31 of 32
+I am rank 0 of 32
+input data: babbage-project-mpi/data_3.csv
+I am rank 1 of 32
+I am rank 2 of 32
+I am rank 3 of 32
+I am rank 4 of 32
+I am rank 5 of 32
+I am rank 12 of 32
+I am rank 13 of 32
+I am rank 14 of 32
+I am rank 15 of 32
+I am rank 18 of 32
+I am rank 21 of 32
+I am rank 23 of 32
+I am rank 7 of 32
+I am rank 9 of 32
+I am rank 11 of 32
+I am rank 22 of 32
+I am rank 26 of 32
+I am rank 27 of 32
+I am rank 29 of 32
+I am rank 30 of 32
+I am rank 16 of 32
+I am rank 19 of 32
+I am rank 20 of 32
+I am rank 28 of 32
+I am rank 10 of 32
+0 : 7338438fe5e33f96f8af819d1636d274
+1 : 8424bef3964718edd59aabb4f356dd51
+2 : a1e1709e894caae6fcf0a178725869dc
+3 : c001be685fa2acaeb51ee00c243ef720
+4 : 9bda1426ba014459cbe337053ce22ca8
+5 : 473d90159b4ec06b965842e142957011
+6 : 04a15ab165f3f416ef6bd5e97089119f
+7 : 428c9e7286710860eae8e33b11608e0a
+8 : 7a3168ec8b41a490eb81ab36e725b580
+9 : 3670a9e5ed53822f677c9e59cb026103
+10 : 8efead5c928b074f3025cecfc4df330a
+11 : fe2ddd3b25fcbab0740e63a09f91e09d
+12 : be47be768a733e20b0708b325230ff71
+13 : 63788962b10b1fe4cf178ad8784d71e4
+14 : 65c2a4a7cab7b0b976cbad5b67c1e93c
+15 : 3b53c645492581ad262059cfb9347676
+16 : 14943ca4c0ab89610eba3f77af1c2e21
+17 : 4bd7dd03a19795157e1ebfce05acbfad
+18 : eba914958182f0d5c17dde71a10813a4
+19 : 52ee782d64aa65610d7a70ca4b9e854a
+20 : 9ed9b60ce36819506222175bfe56391f
+21 : 048acb4ba9f772cda7a31933f1ee6333
+22 : 7b8e3bc406100e5168e2985abd0c7f6a
+23 : 6be5ffd2dd10d1eb59e59a84c0cae54b
+24 : 4c6907956326c0e65b4880b3a0882e31
+25 : 3ac614878497cebd7a15a7c13a4ae495
+26 : ce7702ea1624e5534676f57ad4646a2d
+27 : e5ec2101d130d5e27aadf9be7d10686b
+28 : b8a9e4da9a3b6fd977f88dc10c756d07
+29 : ec770dd6c46328fefc9d798d3f8a284b
+30 : 8f1164de4a623e143634570ec4e2194a
+31 : 842836fa825444d8971768d86282d0f8
+3/32/2 Done
+3/32/3 File - data_3.csv / Nodes - 32 / Column - 3
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_3.csv 3
+I am rank 5 of 32
+I am rank 6 of 32
+I am rank 27 of 32
+I am rank 11 of 32
+I am rank 18 of 32
+I am rank 30 of 32
+I am rank 0 of 32
+input data: babbage-project-mpi/data_3.csv
+I am rank 1 of 32
+I am rank 2 of 32
+I am rank 4 of 32
+I am rank 10 of 32
+I am rank 13 of 32
+I am rank 17 of 32
+I am rank 19 of 32
+I am rank 25 of 32
+I am rank 26 of 32
+I am rank 29 of 32
+I am rank 31 of 32
+I am rank 3 of 32
+I am rank 9 of 32
+I am rank 12 of 32
+I am rank 15 of 32
+I am rank 20 of 32
+I am rank 21 of 32
+I am rank 23 of 32
+I am rank 28 of 32
+I am rank 24 of 32
+I am rank 7 of 32
+I am rank 14 of 32
+I am rank 16 of 32
+I am rank 22 of 32
+I am rank 8 of 32
+0 : 48cf6e1a6413f373449254981b33384d
+1 : 00b2670ab01ef8e82ed539b157fbc023
+2 : bae3e59c388b78f4552a3dc1295036c6
+3 : 7245472b5397442acb6dceb048c64869
+4 : 520e65c688c2e86d7fa9d34961b2aaa6
+5 : 2b7aa7009525bbbcc3140fc2213465f2
+6 : e073ac5230a12e4fb942a8d4f62b6545
+7 : 7add4336cc91a424d664fc4103c3a9b3
+8 : ebf7e1c559e3ab19e06a5ad79e4bfb2a
+9 : 8d3b520a0dfbdb90aa29a191a80c4359
+10 : 5bbdecdc033aa99612c6ebd9ab21a71f
+11 : 9a3a2888e291f3170a7c4267afb34798
+12 : 97be52b9ce8295a538202aeb5413e56a
+13 : 066b423f98db1d86218c5b0205789d04
+14 : 80cae75a69177f03b89f73a086835475
+15 : 7637e009daa26fecbcfa76e058690da0
+16 : 9c66ade55866d46122d3a5d0e76bf988
+17 : 78d5544acfe5466b07c0a0254ec07fc0
+18 : 516344691653ca89e4e4630fd9307345
+19 : cde93db0b0f18df411430fb7bc3c6767
+20 : ed3609fb17fb5db82959d1c35f22d79e
+21 : e27d470c84e344e9a524586f56797a4d
+22 : c65c73f1c1da12c6834f320ff2ecb96a
+23 : 50cbc82909fadd409edd708c72c1d1ec
+24 : 20f4700c5a3c0997241034698add7c49
+25 : 4447c285dc9fc239bc30a7a6da1987a4
+26 : f117c94df6494599a09d420e9f5e1e16
+27 : 482d24297ce1b785002fe9ddc29b0bc0
+28 : 66b921c3e836b74d5f3e80f378ba063d
+29 : 821d04d673ec15dd20cfe21e0caafcc2
+30 : b8e6549a28e328d9a7baa90a96da5925
+31 : 3b7e35242b22ce2b5c08be90ae6c6ef4
+3/32/3 Done
+4/1/1 File - data_4.csv / Nodes - 1 / Column - 1
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 1
+I am rank 0 of 1
+input data: babbage-project-mpi/data_4.csv
+0 : 86a1264c8fcd49d8f030284008f44b39
+4/1/1 Done
+4/1/2 File - data_4.csv / Nodes - 1 / Column - 2
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 2
+I am rank 0 of 1
+input data: babbage-project-mpi/data_4.csv
+0 : aa4ecd3338b80c55eb6c7b94162d7545
+4/1/2 Done
+4/1/3 File - data_4.csv / Nodes - 1 / Column - 3
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 3
+I am rank 0 of 1
+input data: babbage-project-mpi/data_4.csv
+0 : f8020db07358337e50994dee7f00eba1
+4/1/3 Done
+4/2/1 File - data_4.csv / Nodes - 2 / Column - 1
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 1
+I am rank 0 of 2
+input data: babbage-project-mpi/data_4.csv
+I am rank 1 of 2
+0 : 0bddad2b019acec333067d7f5e7a4b59
+1 : 0f1f7e3c7ac8b0ce0760a59477c4a839
+4/2/1 Done
+4/2/2 File - data_4.csv / Nodes - 2 / Column - 2
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 2
+I am rank 1 of 2
+I am rank 0 of 2
+input data: babbage-project-mpi/data_4.csv
+0 : fdcff7159ff520a19d7b398871a9dccf
+1 : 2c1755097d6b7635cab55e1af2652708
+4/2/2 Done
+4/2/3 File - data_4.csv / Nodes - 2 / Column - 3
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 3
+I am rank 0 of 2
+input data: babbage-project-mpi/data_4.csv
+I am rank 1 of 2
+0 : ea78acffe1c1e7405ac60e917716cfc1
+1 : 04f8380c5a7e9827a17f07a7858c93b4
+4/2/3 Done
+4/4/1 File - data_4.csv / Nodes - 4 / Column - 1
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 1
+I am rank 1 of 4
+I am rank 3 of 4
+I am rank 0 of 4
+I am rank 2 of 4
+input data: babbage-project-mpi/data_4.csv
+0 : 0bddad2b019acec333067d7f5e7a4b59
+1 : 162f27e5f7297aa589d53b9d590fe602
+2 : 0f1f7e3c7ac8b0ce0760a59477c4a839
+3 : 4fea45acca4489f05ef8f6cbddcf3673
+4/4/1 Done
+4/4/2 File - data_4.csv / Nodes - 4 / Column - 2
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 2
+I am rank 2 of 4
+I am rank 0 of 4
+input data: babbage-project-mpi/data_4.csv
+I am rank 1 of 4
+I am rank 3 of 4
+0 : 29cdee26100ecd6a5543bc4c0181f96c
+1 : 62563ad926fd3818dc65ece0b2eb64a8
+2 : 2c1755097d6b7635cab55e1af2652708
+3 : d421b9b9e3e793ffa32718380a1ac3fa
+4/4/2 Done
+4/4/3 File - data_4.csv / Nodes - 4 / Column - 3
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 3
+I am rank 0 of 4
+input data: babbage-project-mpi/data_4.csv
+I am rank 2 of 4
+I am rank 1 of 4
+I am rank 3 of 4
+0 : 5445c4a4541a2c1e17d97f0bd9853330
+1 : 2727482f72e8ddca367eecfe0b582cab
+2 : 2bac74d397a1cde23c0b7bb5c1817368
+3 : 5f1b8dd90eaadca7350e0075650e7c13
+4/4/3 Done
+4/8/1 File - data_4.csv / Nodes - 8 / Column - 1
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 1
+I am rank 5 of 8
+I am rank 3 of 8
+I am rank 7 of 8
+I am rank 6 of 8
+I am rank 1 of 8
+I am rank 0 of 8
+I am rank 2 of 8
+I am rank 4 of 8
+input data: babbage-project-mpi/data_4.csv
+0 : 245e3221228406f1f15aa7fa34c12263
+1 : 0b88aab876d845e4f2bf79f84d653528
+2 : c50a60128e1dd196ec0578f846a9b8f1
+3 : e2ad3ba54d56a8d41c624a531a5efd8b
+4 : 009229161e5d82779c9ba3662258bb31
+5 : 86f2a3015dfc90efc516935309801137
+6 : 8a36f7cc9751c8d1d0e06f8af1d86418
+7 : a7200515f3bbc686161fee1513a0930e
+4/8/1 Done
+4/8/2 File - data_4.csv / Nodes - 8 / Column - 2
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 2
+I am rank 0 of 8
+input data: babbage-project-mpi/data_4.csv
+I am rank 6 of 8
+I am rank 3 of 8
+I am rank 4 of 8
+I am rank 5 of 8
+I am rank 7 of 8
+I am rank 1 of 8
+I am rank 2 of 8
+0 : a4d0d97f7553dcf2e124dfaefe8a7ce7
+1 : 1bb89c4477aa1ce433edb251abb41808
+2 : 9dc202d1974331e4648b715ec233394e
+3 : 588023f0bf5d30e26981bf337a1c22c4
+4 : 791c8acd0c5fda500b2a40379ad9bfd2
+5 : 01b4a7acc09f847567160fbd9adae2df
+6 : 3c20a786e0c3721e2006b23848e674a9
+7 : 5744d559ff0798d09004230081bb1598
+4/8/2 Done
+4/8/3 File - data_4.csv / Nodes - 8 / Column - 3
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 3
+I am rank 1 of 8
+I am rank 2 of 8
+I am rank 3 of 8
+I am rank 4 of 8
+I am rank 5 of 8
+I am rank 7 of 8
+I am rank 0 of 8
+I am rank 6 of 8
+input data: babbage-project-mpi/data_4.csv
+0 : 8a1706da13f2b91dd217327e062ada6c
+1 : 93d9863a85318742f542e082536dd08d
+2 : dc06ca5243a433ff93efb8ad7675fa9e
+3 : 779564fa19444a63d38ed31cc3010e46
+4 : cdcfe30f990b09ae17a2ee920b373a3c
+5 : f542dea9b6d27a7853c7e67e399bedfc
+6 : 3363bab9ab3e067462fefd448e19abf5
+7 : 5b9ae540f06ef5384a9b8bd6c2f760dd
+4/8/3 Done
+4/16/1 File - data_4.csv / Nodes - 16 / Column - 1
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 1
+I am rank 12 of 16
+I am rank 8 of 16
+I am rank 6 of 16
+I am rank 3 of 16
+I am rank 5 of 16
+I am rank 7 of 16
+I am rank 13 of 16
+I am rank 2 of 16
+I am rank 11 of 16
+I am rank 4 of 16
+I am rank 14 of 16
+I am rank 0 of 16
+I am rank 10 of 16
+input data: babbage-project-mpi/data_4.csv
+I am rank 15 of 16
+I am rank 1 of 16
+I am rank 9 of 16
+0 : 2a9143ea48b07c1ce7102f877d7dd187
+1 : ab6d63d16d71de05f81349cfbc670b74
+2 : aa8597c787df7e41e6e8991a98aaaaaf
+3 : 4b1c5ad7d42361209a2ce97fc2bbe405
+4 : ee7a3a51666c81742a1ed7fde2bec6e6
+5 : e6d2ec80b6463fba04b4a2608db4df47
+6 : 42fd1687a065d2cc6c2034915def4f09
+7 : e986243fffb0506635a9d2c5cfeb734b
+8 : b58fa42967fb0c696239af1d24214caf
+9 : fa8b2c7156630213c9d671a0404e3706
+10 : 7c465649be215e21dad765151e7a0b9d
+11 : 1f9e22e14ec90b77e8e23c10d1e93a29
+12 : e90b41f79b78af30462c88437fa4b078
+13 : b159bd8c16296e9428af437d75019888
+14 : 25992013090beb805d5d21db6902c5c7
+15 : e91a92205ad72ed08c02a91032f31f61
+4/16/1 Done
+4/16/2 File - data_4.csv / Nodes - 16 / Column - 2
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 2
+I am rank 3 of 16
+I am rank 4 of 16
+I am rank 8 of 16
+I am rank 10 of 16
+I am rank 11 of 16
+I am rank 12 of 16
+I am rank 13 of 16
+I am rank 1 of 16
+I am rank 5 of 16
+I am rank 15 of 16
+I am rank 6 of 16
+I am rank 9 of 16
+I am rank 14 of 16
+I am rank 0 of 16
+I am rank 2 of 16
+I am rank 7 of 16
+input data: babbage-project-mpi/data_4.csv
+0 : 2f96e86312543d2014a27dfdd169c8b9
+1 : 52b51a5738e299ed34473449dde05e1c
+2 : 6179fffb31758173455b899a7d7ec9e2
+3 : 0717fb5927896c101f877676695d6165
+4 : 1d4ba4a073e8cbdeb4202b09729c116d
+5 : ad1a4c1b8de9b9f6770d7f27ea676264
+6 : c8aa1b18179d126455f5f0099c54d9be
+7 : 5c86a82d474726aeabec2f07cf195fe2
+8 : 05e7790139a41e411301c568c9499c27
+9 : 2dee7792d60b251175530d67698913aa
+10 : d0df933013293342eabd470e93fbe026
+11 : be9f3e86759dc6a85a1f2dc383f66a9f
+12 : 9443f333dfd80f3e4aa0787ba7e2b254
+13 : 835b787166fa0e2369394c56326b4fd3
+14 : 2df0204f7ce9f645d755ca5c386c92bd
+15 : a190d704cb45fe9d115ac0c49d5a048f
+4/16/2 Done
+4/16/3 File - data_4.csv / Nodes - 16 / Column - 3
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 3
+I am rank 3 of 16
+I am rank 5 of 16
+I am rank 7 of 16
+I am rank 13 of 16
+I am rank 0 of 16
+input data: babbage-project-mpi/data_4.csv
+I am rank 1 of 16
+I am rank 4 of 16
+I am rank 6 of 16
+I am rank 9 of 16
+I am rank 10 of 16
+I am rank 12 of 16
+I am rank 14 of 16
+I am rank 8 of 16
+I am rank 2 of 16
+I am rank 11 of 16
+I am rank 15 of 16
+0 : 389c325b7118ff23887bce3597bfce33
+1 : e121643d131ad41ef3846e3682610d52
+2 : 914db1fa2fecebbd73e8e8b3127cdcbe
+3 : 1098d9e79140cb3411402d4740f25fcc
+4 : 8a0b0f5335d7bf42caf6df46bb6cc41a
+5 : 77a46341219ec8e1b698d218eb95e7b9
+6 : cb4ed47b49ef735ef8361dac60d458b2
+7 : 2cd4c0c52a3ba01c5dcc21a1e23d6695
+8 : 6fb984cc6b3e13c2c46ddd6bf0a6207c
+9 : 3df392b7519bf70f8616344360589409
+10 : 46259aae3b1929b10c18bb0e132e50cb
+11 : 46d25109b3fcc66fb3beb0da07789fc6
+12 : 089eac32927bd248bca905de225834bc
+13 : 252252b0e1d5c07c1559e729881cada9
+14 : 3068c40b60a7ba95e32c68671e70df32
+15 : 11beab597d87b28c4ae0e95e8e7a90d7
+4/16/3 Done
+4/32/1 File - data_4.csv / Nodes - 32 / Column - 1
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 1
+I am rank 8 of 32
+I am rank 0 of 32
+I am rank 3 of 32
+I am rank 4 of 32
+I am rank 6 of 32
+I am rank 15 of 32
+I am rank 24 of 32
+I am rank 27 of 32
+I am rank 2 of 32
+input data: babbage-project-mpi/data_4.csv
+I am rank 9 of 32
+I am rank 11 of 32
+I am rank 12 of 32
+I am rank 13 of 32
+I am rank 17 of 32
+I am rank 19 of 32
+I am rank 20 of 32
+I am rank 28 of 32
+I am rank 1 of 32
+I am rank 7 of 32
+I am rank 10 of 32
+I am rank 14 of 32
+I am rank 18 of 32
+I am rank 21 of 32
+I am rank 22 of 32
+I am rank 23 of 32
+I am rank 29 of 32
+I am rank 30 of 32
+I am rank 25 of 32
+I am rank 16 of 32
+I am rank 5 of 32
+I am rank 31 of 32
+I am rank 26 of 32
+0 : eb7077876956da9097b83b437d79f8b7
+1 : 1096827df3f83d0a2c5970e95bc8969d
+2 : 5705706b8ded01774f4939978c450d5b
+3 : 072cd5c8ff4ea1301d8627f79771322b
+4 : aff95eef1fe9852de42c48136e0c4394
+5 : f4e921752564fca0f2ff58b00b7df46b
+6 : 86275d76d99fbf58c7074b33a8a22e7d
+7 : 5133c62bb3548d851225ffbaf9fcb974
+8 : 6cbe0a50d786813d510a906bd5ee410e
+9 : 7e17e84bdf4c976439b1659a7fe25a82
+10 : a1785aae56d30552e594e3274f0e080d
+11 : 949e78fede6f1cd1279e339172631b9b
+12 : d3f6061c5140c0235fc3a4f68b78386b
+13 : e43543d7a029c5196fcf7455badaa183
+14 : e138fe550809142cf747fdfb4a83e520
+15 : e775801b1526c5c866dcae022fbc7d02
+16 : fd6cdd66fbeb5097a165989b3032885d
+17 : 9270358dd914ea9139ef3a92feeb4861
+18 : f38cf5223019c992e96654ea0753b2b2
+19 : e8da3be4a7f0c8a2a3d9251a454cb59c
+20 : 3f575ee5e556708f4f5d84712252c793
+21 : 406eebcffa2abf839efc7406985a51c9
+22 : d1d0a48036c641808c79fed20527e697
+23 : 9416b833e51901742ed3f44b9e4fbaea
+24 : e8da51302f3156c17bdfa828a2fadb23
+25 : f1ee65eed3b6b910819b10d6d12e2871
+26 : 767ea3ee2cdf5f8c8a8ab40d3a541fc3
+27 : 37213a54e667f493894cd3cd30572f7d
+28 : 20a7bf865481bbb84d9a7fb4bc698e0e
+29 : 3cf79d37f2bf816721d5e2c2b0a3d068
+30 : 4f0c2e667d4112be077a707255238420
+31 : 2854aa3f3055571a9d81e6e4dd58893e
+4/32/1 Done
+4/32/2 File - data_4.csv / Nodes - 32 / Column - 2
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 2
+I am rank 4 of 32
+I am rank 18 of 32
+I am rank 23 of 32
+I am rank 24 of 32
+I am rank 28 of 32
+I am rank 0 of 32
+I am rank 2 of 32
+I am rank 3 of 32
+I am rank 5 of 32
+I am rank 6 of 32
+I am rank 8 of 32
+I am rank 9 of 32
+I am rank 10 of 32
+I am rank 11 of 32
+I am rank 13 of 32
+I am rank 14 of 32
+I am rank 15 of 32
+I am rank 16 of 32
+I am rank 19 of 32
+I am rank 20 of 32
+I am rank 22 of 32
+I am rank 25 of 32
+I am rank 26 of 32
+I am rank 30 of 32
+input data: babbage-project-mpi/data_4.csv
+I am rank 7 of 32
+I am rank 12 of 32
+I am rank 17 of 32
+I am rank 21 of 32
+I am rank 27 of 32
+I am rank 1 of 32
+I am rank 31 of 32
+I am rank 29 of 32
+0 : c26470d7b41d8291ae3dafccdff597d9
+1 : 8223a1658753463eca61aa80485446d9
+2 : 830c803eebe2af55de59fbc62ea32e96
+3 : 2fcd60254b061fe467d3a6b2f07a09c4
+4 : 8dbfadcee93d878cb605c33d236d7851
+5 : 2ab5edb726eac71a458d5b30f8909554
+6 : 9cb3d626bd590da8534f85dde49b82cb
+7 : 0392a0a96a31442be4e7fb72b92ea125
+8 : affb2b90d2f285e499e18f3eb6c86387
+9 : abae414b1ad0bfe346ffece671a199ed
+10 : c12acedfb94f8e93be3decc135a37a5b
+11 : ccfbf351264e7efb923f2a4e65b56da7
+12 : 88f84e2a9d607b46928c35bfffa0ad4c
+13 : cd818a7ba1e279891767e84beb60ff35
+14 : 696cdc2a7aea025b2405604baa0e05f0
+15 : 65cee2286d1647c3fa8e91d05b328f0c
+16 : 4d957a4766511f87d9e8a1f0ccb9196a
+17 : b449cd4e267f9eff10df2478cc864c12
+18 : 5211ce53da16585bef7bf0e3182754f4
+19 : de40a559a1842d616765eed0e48e1d1a
+20 : 8ce05fd61c6af66a80bac80b57f1f529
+21 : a93ed5b529b3568f5fa2cd511453effd
+22 : 5ba9702f3812676b8d5051e7bd3af193
+23 : 30f1e7e2868c5997140ef36e8383dff9
+24 : 39e031ea91cbaa59870df7fae5e1855e
+25 : 36b03a70cb9e3c1a6d99be1f518b98a8
+26 : c32e8e21cc719c5a255aaccd19f8f3e0
+27 : 18c5007743d1a33ca37e73de48fc6a37
+28 : 27568cbd6950abaa54bf1e0f8754d556
+29 : e4832665ce341dbfe96d2e68588a86d3
+30 : a69cdd4a083b19ee3ed70e9049f85642
+31 : c15667557ec14041af2989910c0b8043
+4/32/2 Done
+4/32/3 File - data_4.csv / Nodes - 32 / Column - 3
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_4.csv 3
+I am rank 7 of 32
+I am rank 26 of 32
+I am rank 6 of 32
+I am rank 24 of 32
+I am rank 17 of 32
+I am rank 19 of 32
+I am rank 21 of 32
+I am rank 23 of 32
+I am rank 25 of 32
+I am rank 28 of 32
+I am rank 29 of 32
+I am rank 2 of 32
+I am rank 3 of 32
+I am rank 4 of 32
+I am rank 5 of 32
+I am rank 8 of 32
+I am rank 11 of 32
+I am rank 13 of 32
+I am rank 14 of 32
+I am rank 15 of 32
+I am rank 16 of 32
+I am rank 22 of 32
+I am rank 27 of 32
+I am rank 30 of 32
+I am rank 31 of 32
+I am rank 0 of 32
+input data: babbage-project-mpi/data_4.csv
+I am rank 9 of 32
+I am rank 10 of 32
+I am rank 18 of 32
+I am rank 1 of 32
+I am rank 20 of 32
+I am rank 12 of 32
+0 : 563ce11f9ebbefb2dbd00fd377b843b6
+1 : fad8fb967c21e3e81625bc5ab9e01419
+2 : 75a7a9184d69854f138ce6e41bcce884
+3 : 83251708480dc878444d160d63a4b379
+4 : b0bd2279eb90a7100e3084f4b34282dc
+5 : e2388c19501dba939b88144bfaa10fe6
+6 : 21c95d68dcb28cba2b2a9d6899d38551
+7 : 00c17c1e28e807825c98e47fd9b04f85
+8 : 38f4edf7ec8074eac396667590bc42cd
+9 : 4d011d971c1fd217a9540d54acb0e2cf
+10 : 6bb30b5984d1f48283501099266f1f33
+11 : 7d4d2d34ec573e96db21ce13154dc672
+12 : 8378ba991506546d64fdb0991c3a60db
+13 : 6398c9ad8df3382e824f57c70fa884e9
+14 : 55c7aca781e2953a4230fffce3cc5dd6
+15 : 2e757c876b49be32b87c3ff34082d1fe
+16 : 5981676c6f4b79796be7c960d520a88c
+17 : d0e47946c856a73e4c7b0d60f206b9b8
+18 : 0d2a0b680121606d36a2257ffa333aa5
+19 : a7499904b4311afad8f77281c8c77c79
+20 : e14c746daf43a6ad6d20666fd25cdb77
+21 : f3de6cd3e993cc117c9ba36e72a5bffb
+22 : c335d71027ddba53e35ad6b903898798
+23 : 9ba5a9ce0ce4f00bf0355b60e86df2bd
+24 : 64188ad7a4a0b58a8dc1f74edec82501
+25 : 9eabe93fa86422f5f6410d88b9f046fc
+26 : bb8f0c4b46bcb9c1f61aa6402b341e49
+27 : 52d8af4f730fbf06e3bea47ea43b68b7
+28 : 3f0c8458f95a94d06b1dc8fb86f38648
+29 : 1ebc0c3f8fde93f469e7750aa44c3b09
+30 : 2a88d0f7b0ac4800d2659a57d5b16b1d
+31 : cf42ad7f6997dbdec918f538008625a9
+4/32/3 Done
+5/1/1 File - data_5.csv / Nodes - 1 / Column - 1
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 1
+I am rank 0 of 1
+input data: babbage-project-mpi/data_5.csv
+0 : 759fec6a14a726e6296c7308e6d8b5e1
+5/1/1 Done
+5/1/2 File - data_5.csv / Nodes - 1 / Column - 2
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 2
+I am rank 0 of 1
+input data: babbage-project-mpi/data_5.csv
+0 : 246921f8a60e3d85d341fa09aef6671f
+5/1/2 Done
+5/1/3 File - data_5.csv / Nodes - 1 / Column - 3
+mpirun -n 1 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 3
+I am rank 0 of 1
+input data: babbage-project-mpi/data_5.csv
+0 : b82bc92c0fae9d4d1d045b277f504026
+5/1/3 Done
+5/2/1 File - data_5.csv / Nodes - 2 / Column - 1
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 1
+I am rank 0 of 2
+I am rank 1 of 2
+input data: babbage-project-mpi/data_5.csv
+0 : 8a7f18e2723b101c957e2a362f66b114
+1 : 4dfdb70eb2371042370fb475b84b7450
+5/2/1 Done
+5/2/2 File - data_5.csv / Nodes - 2 / Column - 2
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 2
+I am rank 0 of 2
+input data: babbage-project-mpi/data_5.csv
+I am rank 1 of 2
+0 : 92605f7dbafbb399299a98be38971acc
+1 : 95c3fca4b6a8fa8aaf4d95ae1a9646b6
+5/2/2 Done
+5/2/3 File - data_5.csv / Nodes - 2 / Column - 3
+mpirun -n 2 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 3
+I am rank 0 of 2
+input data: babbage-project-mpi/data_5.csv
+I am rank 1 of 2
+0 : 34f4b9ecfbe161e0b0a87e04a2399bec
+1 : dc05dc6d8a04193737ac4de2afcca3a7
+5/2/3 Done
+5/4/1 File - data_5.csv / Nodes - 4 / Column - 1
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 1
+I am rank 3 of 4
+I am rank 1 of 4
+I am rank 0 of 4
+I am rank 2 of 4
+input data: babbage-project-mpi/data_5.csv
+0 : c046370b3d8776f39f94b15421dce0e3
+1 : 346040a6528792373a5248feff169991
+2 : c761285fd81bcd637f65a68762bea640
+3 : 076adcbf0d44636714b9a211fe5047e3
+5/4/1 Done
+5/4/2 File - data_5.csv / Nodes - 4 / Column - 2
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 2
+I am rank 0 of 4
+I am rank 1 of 4
+input data: babbage-project-mpi/data_5.csv
+I am rank 2 of 4
+I am rank 3 of 4
+0 : 7e111fdf36df77fab0a2e437794be3dc
+1 : e2f7080012b53d490404593c6ad5f497
+2 : ee434b8b9b7dd4791e68a2d72ba6ad90
+3 : c0e825f08dba58358153302ef989b418
+5/4/2 Done
+5/4/3 File - data_5.csv / Nodes - 4 / Column - 3
+mpirun -n 4 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 3
+I am rank 0 of 4
+input data: babbage-project-mpi/data_5.csv
+I am rank 1 of 4
+I am rank 2 of 4
+I am rank 3 of 4
+0 : 290aea91b0789f61000098d883524f8d
+1 : c409509127e13607b7ed18a2214c6866
+2 : 5dcbec34d8a31b377a9941312ab74f66
+3 : 450c32a9c48ac016c689740c40728306
+5/4/3 Done
+5/8/1 File - data_5.csv / Nodes - 8 / Column - 1
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 1
+I am rank 0 of 8
+I am rank 2 of 8
+I am rank 4 of 8
+I am rank 6 of 8
+I am rank 1 of 8
+input data: babbage-project-mpi/data_5.csv
+I am rank 3 of 8
+I am rank 5 of 8
+I am rank 7 of 8
+0 : b9a3294a99fd26379d1dd13226cb5dec
+1 : de4ac7759c15c9465bb7150bcc5d2955
+2 : a871180ac4a33f2862c99703dd89fcf9
+3 : e6c2e5c4c5fc5f2c5d90fe1dccd3754f
+4 : 4615b1653f5ebb78080c797ad10be85a
+5 : 2def1ffd943717f71b919c5c0bb03c13
+6 : 058e2ee53701067d9e8ffed387fdb81c
+7 : ac1f76fc0094f03a04b4221ce72bbe8d
+5/8/1 Done
+5/8/2 File - data_5.csv / Nodes - 8 / Column - 2
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 2
+I am rank 3 of 8
+I am rank 5 of 8
+I am rank 0 of 8
+input data: babbage-project-mpi/data_5.csv
+I am rank 1 of 8
+I am rank 6 of 8
+I am rank 7 of 8
+I am rank 2 of 8
+I am rank 4 of 8
+0 : 909714d74209c785827943aa950d7fe6
+1 : 9ae7a1eec6ea58bc359ab2e881db6b55
+2 : 50387daaea7885dd1564c2445f3a3898
+3 : 962b7d8d998f36ad72760914812ad7b2
+4 : 8d807634584063e14e50df8e7b061ef2
+5 : 279de81a02823f91ae1e11c0c7ab9678
+6 : e35c4a2ae955ebe68fb9b097f7f0ba02
+7 : 5ca4e74d6945535a57452fd2c7161b6e
+5/8/2 Done
+5/8/3 File - data_5.csv / Nodes - 8 / Column - 3
+mpirun -n 8 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 3
+I am rank 6 of 8
+I am rank 0 of 8
+I am rank 1 of 8
+I am rank 5 of 8
+I am rank 7 of 8
+input data: babbage-project-mpi/data_5.csv
+I am rank 3 of 8
+I am rank 4 of 8
+I am rank 2 of 8
+0 : aab22d13bb5a336aba701899208942bf
+1 : e03689fd9e0b888de91438a95dde1ab6
+2 : 443e7358add9c343caeffc5144d6bbd5
+3 : 8e2ac1767605530eec2c3f9acc5edc11
+4 : ea3116c628f5bf592608b0566ce66310
+5 : 5201f123c58740952c5b08cf9dde3f7f
+6 : 45a065afd603d97e922dc1a7004bcb39
+7 : 478736b59ee277da12d1eb751b1092f6
+5/8/3 Done
+5/16/1 File - data_5.csv / Nodes - 16 / Column - 1
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 1
+I am rank 2 of 16
+I am rank 4 of 16
+I am rank 10 of 16
+I am rank 3 of 16
+I am rank 5 of 16
+I am rank 7 of 16
+I am rank 11 of 16
+I am rank 12 of 16
+I am rank 13 of 16
+I am rank 15 of 16
+I am rank 0 of 16
+input data: babbage-project-mpi/data_5.csv
+I am rank 1 of 16
+I am rank 14 of 16
+I am rank 9 of 16
+I am rank 6 of 16
+I am rank 8 of 16
+0 : 3ac223bebde55656740454d65c354e0b
+1 : 0a99c754d892b6a2ac6b62dd25538bee
+2 : 92c486e22baba9986f5d46731b405c18
+3 : cf74be5321799b705e3f0a512035581d
+4 : 0ca6172c87073bf56d2fcf0217744af6
+5 : 74e1e19e15dc88719c75cbcd380e276d
+6 : e65bb08d551f24724846ca67d838e05d
+7 : 8b0bc35dd4950be2ee72ea445ccf7015
+8 : f01ad292b8068394b7783d5c8396e0f1
+9 : db2f1d01bd89de661d500c1b5264bd26
+10 : 46c3cac36534e82cbefcb1c056eef1d8
+11 : da7fca16fe0c20ffab0c7ea7f3efe53f
+12 : 3e64845b79b96ad179cf80d5807cb1e2
+13 : 0b8503711b0114c52ac76027f6444c70
+14 : c276605b9c6f6fb8bcf9ab32bc96053b
+15 : 73a89c9fa6b51ec159ed27dc52460bbc
+5/16/1 Done
+5/16/2 File - data_5.csv / Nodes - 16 / Column - 2
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 2
+I am rank 10 of 16
+I am rank 12 of 16
+I am rank 1 of 16
+I am rank 4 of 16
+I am rank 5 of 16
+I am rank 7 of 16
+I am rank 8 of 16
+I am rank 9 of 16
+I am rank 11 of 16
+I am rank 13 of 16
+I am rank 14 of 16
+I am rank 15 of 16
+I am rank 3 of 16
+I am rank 6 of 16
+I am rank 2 of 16
+I am rank 0 of 16
+input data: babbage-project-mpi/data_5.csv
+0 : 05c449b3040e1938db73db75c3e0960f
+1 : e7bf344c5d827cc1e2a472b8faaca0bb
+2 : 0f2ea2e88e767764916ab0565e7ad686
+3 : 70cd1baf1eb1ea19168db2f55b123c53
+4 : e97a45d4ddd48b8b15bcb325a12aa39d
+5 : a984729d133bd524b9f5dd52bc0849dd
+6 : 6a24c6119fb6d8599c8eb1b745faa3b0
+7 : 98ead7ff5ae95a08fdbea8976770ac4a
+8 : cfdf66a9ba9f7ad384196475207b6906
+9 : 1ef3593cf4e7e49515c90fcf09452613
+10 : 7c812e6f09b41ca89e8aaf85af625649
+11 : 4eebbd28459708b66519aaecbd3c4c55
+12 : 381a34f4d990974ed8495f0b6372a712
+13 : 0fd3b931cfeac207b32132124a84a06b
+14 : 7a2493708f74d009f0bd6a7943bd794b
+15 : 5fde5c55b174d5c31d8f38d3358b1224
+5/16/2 Done
+5/16/3 File - data_5.csv / Nodes - 16 / Column - 3
+mpirun -n 16 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 3
+I am rank 11 of 16
+I am rank 7 of 16
+I am rank 9 of 16
+I am rank 3 of 16
+I am rank 13 of 16
+I am rank 15 of 16
+I am rank 0 of 16
+I am rank 10 of 16
+input data: babbage-project-mpi/data_5.csv
+I am rank 5 of 16
+I am rank 12 of 16
+I am rank 14 of 16
+I am rank 4 of 16
+I am rank 8 of 16
+I am rank 1 of 16
+I am rank 2 of 16
+I am rank 6 of 16
+0 : 3076bfcf1de50e0e8ed29e7ed551b0a1
+1 : 4f527d1fcdf160d56dcd6c302d56b14d
+2 : f9a83b649aa7a10d84d26de1fde5800c
+3 : 3f8900603f9010889c2f6cfc13069d6a
+4 : 7484078745c27b129db1b7edf04cc804
+5 : 0aacf7729afc97038fac0f913ce22f53
+6 : eefd413aa047d193fe345b001d1c0768
+7 : 87670a25c6f3ed0d8c4d3faf7a6adca4
+8 : f1fdd6e70374d111386e5c200917f5a6
+9 : 7e01e8320b64eaf51b5d410fd78c05d4
+10 : ae65805ddcd35c5c7c9f1626302ddccf
+11 : 9fa03a7b2dc4ed44be3161da2ebf77d4
+12 : 771cb6a1d767e8c4ec64cb18ffac07a8
+13 : 1ef77affc27aa621b11123f8115db17e
+14 : 5355f8eb0f218e7df1600dab1fc7440c
+15 : 35490d223703449851fa7b3097111efc
+5/16/3 Done
+5/32/1 File - data_5.csv / Nodes - 32 / Column - 1
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 1
+I am rank 6 of 32
+I am rank 27 of 32
+I am rank 29 of 32
+I am rank 3 of 32
+I am rank 13 of 32
+I am rank 16 of 32
+I am rank 18 of 32
+I am rank 21 of 32
+I am rank 24 of 32
+I am rank 25 of 32
+I am rank 28 of 32
+I am rank 30 of 32
+I am rank 2 of 32
+I am rank 4 of 32
+I am rank 5 of 32
+I am rank 7 of 32
+I am rank 8 of 32
+I am rank 10 of 32
+I am rank 12 of 32
+I am rank 14 of 32
+I am rank 17 of 32
+I am rank 20 of 32
+I am rank 23 of 32
+I am rank 1 of 32
+I am rank 9 of 32
+I am rank 11 of 32
+I am rank 15 of 32
+I am rank 19 of 32
+I am rank 22 of 32
+I am rank 31 of 32
+I am rank 0 of 32
+input data: babbage-project-mpi/data_5.csv
+I am rank 26 of 32
+0 : c8f23623745c08523e33639e850922dd
+1 : 3630e00401845f6479b918d017480bed
+2 : e0dee000203f09f01d07528dd9fa4325
+3 : 4c1c84148ff690273791a5a546fc13a1
+4 : 84e69436c4e96cd580e7a4057edca9e1
+5 : a4178e9925a84843d873c5def088e41a
+6 : 3e1b98f8e6dd683da269ae57a0fcdba9
+7 : 08ac52f17611c7af805a767249a9ad40
+8 : 98f8d8a8a73840eecd61aae76bd01ce9
+9 : 36b3cca28611d095be3c5448e38a0a6d
+10 : f667752fc98067a2428997dac3db4f86
+11 : 07392ae976586d4ccb7d6aa6ad4d2e8b
+12 : 68020ab899c2b05981737f4029602604
+13 : d09352c9c1bd93b56481b21f169b6fb6
+14 : 1d059cdca20c278960dc2bc0c78558d3
+15 : 1c1ad9aa24717fd9b8dc479824166735
+16 : 7f1ec8c32d2dc13a319200fda6e0b9e5
+17 : eb0cf5e2d099359fc588143c3905a5e3
+18 : 151df42f377d7fd92016d70c560a618f
+19 : 05ceff5ef249694c4dd8d0a61d47fba3
+20 : f7902c2e147912cf9fe4f3f28a837a56
+21 : 5ce45c8b2dcaf5176e5a82563e41a73a
+22 : 0516669f56afaf38fd6f900cdbd6e84f
+23 : 4860d59fd49b672799b3e0c2f9fab1d8
+24 : 96aafcbb752110d0901efdae9a663bad
+25 : 448280f29a7ec97d992d057a665df00a
+26 : ff826607bebb9297742e1adc1f4f348c
+27 : 6ae451acf40d1f9780aa4eeab610160f
+28 : f93ce22c683d10734ae360e511958d2b
+29 : 5851102defdffe1e880a0a1b9e88398b
+30 : 5ee21cab3dbd6262683a586468951b14
+31 : eca4a2aa8409e4e24d6acd1bcf0e6b3d
+5/32/1 Done
+5/32/2 File - data_5.csv / Nodes - 32 / Column - 2
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 2
+I am rank 21 of 32
+I am rank 27 of 32
+I am rank 30 of 32
+I am rank 2 of 32
+I am rank 4 of 32
+I am rank 13 of 32
+I am rank 14 of 32
+I am rank 23 of 32
+I am rank 29 of 32
+I am rank 1 of 32
+I am rank 3 of 32
+I am rank 7 of 32
+I am rank 8 of 32
+I am rank 9 of 32
+I am rank 15 of 32
+I am rank 16 of 32
+I am rank 17 of 32
+I am rank 18 of 32
+I am rank 20 of 32
+I am rank 28 of 32
+I am rank 31 of 32
+I am rank 6 of 32
+I am rank 10 of 32
+I am rank 19 of 32
+I am rank 25 of 32
+I am rank 22 of 32
+I am rank 12 of 32
+I am rank 5 of 32
+I am rank 0 of 32
+input data: babbage-project-mpi/data_5.csv
+I am rank 26 of 32
+I am rank 24 of 32
+I am rank 11 of 32
+0 : d1aaee23c1508eb1019319180419f8fe
+1 : 7e0b0a1098b0840095505d75a268bc22
+2 : 496d1451f4bf6e84f8050be5304aa835
+3 : b27825c323e93e238bff8bdd9938a873
+4 : 4277aa65d78790b1abb411ee7188e925
+5 : 70219d028bf32c231f3d30e435396e01
+6 : 5104c684ad82be1f935cdb563feb3fe6
+7 : 3b52725ec1a008cf080db65ec1d4f17b
+8 : ca77bc235624cb75174dcd0809111676
+9 : f47fa1a88f262ff1478d5fdd78425b7b
+10 : 7e2c1eb792585d052fae409398f416c8
+11 : afaa91fb0ec0a29da65683ae8d19eb3b
+12 : 88b659699298c2cd4d952d2d403e5364
+13 : 8c4177829159aeb67b3317e8a9b04ca1
+14 : c822c36db3a81c5e506dd6bddf35fd53
+15 : a34321bdc31ccb08d4f58138395e3138
+16 : c291e7a52f415ae3c24aa922f8fc036f
+17 : 724505792ce056f1d0e4f98b9aa887a9
+18 : a7fda0d390e8db83780bddc20aefd751
+19 : 5988f204db4c9ebde8bcb5527a9625a3
+20 : 930238afb7cabce8d646a6e22b63874f
+21 : 9774c0a5a097f27e4f4fdb2f60f750a9
+22 : 3d64b256f5c70ee25c84a142304b1d9f
+23 : 9b7ada948748039802e97d22a13608be
+24 : 18491bb70a9f238877833fb7d25501fd
+25 : 2630fdc115baaee74c1453823f084104
+26 : ae6ea4ea0a96686f6a7ca1a7ed108422
+27 : 8e7745e2113cf8cdc07c08cd84579b39
+28 : f1b8770d61712bebc715a2abb0ba3910
+29 : bde1e4a792cac369885fa93f34c59c27
+30 : 99ee8ebe1e168b015306f7436f04dfce
+31 : 578768022676ee41d857a5dd4068b686
+5/32/2 Done
+5/32/3 File - data_5.csv / Nodes - 32 / Column - 3
+mpirun -n 32 python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_5.csv 3
+I am rank 15 of 32
+I am rank 24 of 32
+I am rank 25 of 32
+I am rank 28 of 32
+I am rank 2 of 32
+I am rank 5 of 32
+I am rank 6 of 32
+I am rank 7 of 32
+I am rank 8 of 32
+I am rank 9 of 32
+I am rank 13 of 32
+I am rank 16 of 32
+I am rank 20 of 32
+I am rank 21 of 32
+I am rank 22 of 32
+I am rank 23 of 32
+I am rank 26 of 32
+I am rank 27 of 32
+I am rank 0 of 32
+input data: babbage-project-mpi/data_5.csv
+I am rank 1 of 32
+I am rank 3 of 32
+I am rank 4 of 32
+I am rank 10 of 32
+I am rank 11 of 32
+I am rank 12 of 32
+I am rank 14 of 32
+I am rank 17 of 32
+I am rank 19 of 32
+I am rank 29 of 32
+I am rank 30 of 32
+I am rank 18 of 32
+I am rank 31 of 32
+0 : fada0cea36fc9d72d56279caa865d0a7
+1 : 2f0387531282c3f51740d9d009c67e1a
+2 : 0d8be60aae7e5908be0c1d1caca83e9f
+3 : ca38458394d6cbf0b5a83712562c2912
+4 : ca286a7f45ce8b534b2bd8cbfbdda4f3
+5 : 02b42f4e4a17c4c2684fec6f9fcaeecf
+6 : bdff6dbf91c2d709a89eda5fa2874fcd
+7 : 4973d29354104f3e732e185d8dd34eeb
+8 : 1c9f203f04cde39194534e7934559321
+9 : fe006af97c604e268ac6060c3adbd824
+10 : da9f66821f8f8efc4424af655b7c076f
+11 : 9dba2bcbed30aab866a5f83fa954d7a6
+12 : 42f5cafdb44f9d97c20e2f6168d7769d
+13 : fb2b8287bacbc3b247041776eadb62f4
+14 : beab5f928d9729156cfa59a9eb727e87
+15 : 121229fb59b83820662e5e15fbb53b34
+16 : 29bd96e18cf549ca4b3fb11a063da33c
+17 : f09b217473246c07898154c7d9e02f83
+18 : 4b4f90a91c56728fd97e8f4f04dd75ac
+19 : bba3bdb315405c674c5b7545160c7597
+20 : 911691c56d267869b0a47bf6248cdbc7
+21 : cf290985a559e9f1140e329e9b16451f
+22 : 3a5829ac638da067a7b247032882b39f
+23 : 1eb2fd068229fd38a6e5174dbd4b6a6d
+24 : de8e33dca7eb79d2b384beb23a646f02
+25 : d367d9ed9e385766a475228e35d182e7
+26 : cc375e1747909804e90d7afef83c7a72
+27 : efd4bb6ca56c55c8eaec7af734d672b1
+28 : 1e133ed384e256384214f7c1541e7821
+29 : 909303feca5f656c7e06d9119b2f9e1e
+30 : adf288e406372ef06f0174c1f403881d
+31 : dcdb50581f226441357682fb23489e1b
+5/32/3 Done

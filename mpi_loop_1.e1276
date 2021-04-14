@@ -1,0 +1,540 @@
+1/1/1 File - data_1.csv / Nodes - 1 / Column - 1
+
+real	0m1.666s
+user	0m1.115s
+sys	0m1.968s
+1/1/1 Done
+1/1/2 File - data_1.csv / Nodes - 1 / Column - 2
+
+real	0m1.572s
+user	0m1.450s
+sys	0m1.939s
+1/1/2 Done
+1/1/3 File - data_1.csv / Nodes - 1 / Column - 3
+
+real	0m1.567s
+user	0m1.434s
+sys	0m1.959s
+1/1/3 Done
+1/2/1 File - data_1.csv / Nodes - 2 / Column - 1
+
+real	0m1.536s
+user	0m2.287s
+sys	0m1.989s
+1/2/1 Done
+1/2/2 File - data_1.csv / Nodes - 2 / Column - 2
+
+real	0m1.530s
+user	0m2.287s
+sys	0m2.003s
+1/2/2 Done
+1/2/3 File - data_1.csv / Nodes - 2 / Column - 3
+
+real	0m1.538s
+user	0m2.308s
+sys	0m2.080s
+1/2/3 Done
+1/4/1 File - data_1.csv / Nodes - 4 / Column - 1
+
+real	0m2.055s
+user	0m4.529s
+sys	0m4.082s
+1/4/1 Done
+1/4/2 File - data_1.csv / Nodes - 4 / Column - 2
+
+real	0m2.071s
+user	0m4.654s
+sys	0m4.024s
+1/4/2 Done
+1/4/3 File - data_1.csv / Nodes - 4 / Column - 3
+
+real	0m2.054s
+user	0m4.543s
+sys	0m4.066s
+1/4/3 Done
+1/8/1 File - data_1.csv / Nodes - 8 / Column - 1
+
+real	0m3.065s
+user	0m8.318s
+sys	0m4.704s
+1/8/1 Done
+1/8/2 File - data_1.csv / Nodes - 8 / Column - 2
+
+real	0m3.024s
+user	0m8.266s
+sys	0m4.575s
+1/8/2 Done
+1/8/3 File - data_1.csv / Nodes - 8 / Column - 3
+
+real	0m3.038s
+user	0m8.297s
+sys	0m4.581s
+1/8/3 Done
+1/16/1 File - data_1.csv / Nodes - 16 / Column - 1
+
+real	0m5.093s
+user	0m16.278s
+sys	0m6.515s
+1/16/1 Done
+1/16/2 File - data_1.csv / Nodes - 16 / Column - 2
+
+real	0m5.138s
+user	0m16.411s
+sys	0m8.414s
+1/16/2 Done
+1/16/3 File - data_1.csv / Nodes - 16 / Column - 3
+
+real	0m5.105s
+user	0m16.457s
+sys	0m6.573s
+1/16/3 Done
+1/32/1 File - data_1.csv / Nodes - 32 / Column - 1
+
+real	0m10.181s
+user	0m50.754s
+sys	0m23.979s
+1/32/1 Done
+1/32/2 File - data_1.csv / Nodes - 32 / Column - 2
+
+real	0m10.150s
+user	0m52.973s
+sys	0m20.582s
+1/32/2 Done
+1/32/3 File - data_1.csv / Nodes - 32 / Column - 3
+
+real	0m10.198s
+user	0m52.951s
+sys	0m21.585s
+1/32/3 Done
+2/1/1 File - data_2.csv / Nodes - 1 / Column - 1
+
+real	0m1.545s
+user	0m1.487s
+sys	0m1.924s
+2/1/1 Done
+2/1/2 File - data_2.csv / Nodes - 1 / Column - 2
+
+real	0m1.389s
+user	0m1.346s
+sys	0m1.929s
+2/1/2 Done
+2/1/3 File - data_2.csv / Nodes - 1 / Column - 3
+
+real	0m1.291s
+user	0m1.297s
+sys	0m1.882s
+2/1/3 Done
+2/2/1 File - data_2.csv / Nodes - 2 / Column - 1
+
+real	0m1.591s
+user	0m2.332s
+sys	0m2.053s
+2/2/1 Done
+2/2/2 File - data_2.csv / Nodes - 2 / Column - 2
+
+real	0m1.550s
+user	0m2.220s
+sys	0m2.210s
+2/2/2 Done
+2/2/3 File - data_2.csv / Nodes - 2 / Column - 3
+
+real	0m1.527s
+user	0m2.227s
+sys	0m2.038s
+2/2/3 Done
+2/4/1 File - data_2.csv / Nodes - 4 / Column - 1
+
+real	0m2.122s
+user	0m4.525s
+sys	0m4.142s
+2/4/1 Done
+2/4/2 File - data_2.csv / Nodes - 4 / Column - 2
+
+real	0m2.059s
+user	0m4.419s
+sys	0m4.169s
+2/4/2 Done
+2/4/3 File - data_2.csv / Nodes - 4 / Column - 3
+
+real	0m2.106s
+user	0m4.628s
+sys	0m4.026s
+2/4/3 Done
+2/8/1 File - data_2.csv / Nodes - 8 / Column - 1
+
+real	0m3.045s
+user	0m8.369s
+sys	0m4.654s
+2/8/1 Done
+2/8/2 File - data_2.csv / Nodes - 8 / Column - 2
+
+real	0m3.057s
+user	0m8.546s
+sys	0m4.831s
+2/8/2 Done
+2/8/3 File - data_2.csv / Nodes - 8 / Column - 3
+
+real	0m3.070s
+user	0m8.393s
+sys	0m4.646s
+2/8/3 Done
+2/16/1 File - data_2.csv / Nodes - 16 / Column - 1
+
+real	0m5.105s
+user	0m16.544s
+sys	0m6.715s
+2/16/1 Done
+2/16/2 File - data_2.csv / Nodes - 16 / Column - 2
+
+real	0m5.303s
+user	0m16.695s
+sys	0m7.729s
+2/16/2 Done
+2/16/3 File - data_2.csv / Nodes - 16 / Column - 3
+
+real	0m5.099s
+user	0m16.250s
+sys	0m6.909s
+2/16/3 Done
+2/32/1 File - data_2.csv / Nodes - 32 / Column - 1
+
+real	0m10.234s
+user	0m51.646s
+sys	0m21.549s
+2/32/1 Done
+2/32/2 File - data_2.csv / Nodes - 32 / Column - 2
+
+real	0m10.093s
+user	0m50.997s
+sys	0m21.180s
+2/32/2 Done
+2/32/3 File - data_2.csv / Nodes - 32 / Column - 3
+
+real	0m10.133s
+user	0m50.734s
+sys	0m22.219s
+2/32/3 Done
+3/1/1 File - data_3.csv / Nodes - 1 / Column - 1
+
+real	0m1.537s
+user	0m1.466s
+sys	0m1.941s
+3/1/1 Done
+3/1/2 File - data_3.csv / Nodes - 1 / Column - 2
+
+real	0m1.489s
+user	0m1.439s
+sys	0m1.937s
+3/1/2 Done
+3/1/3 File - data_3.csv / Nodes - 1 / Column - 3
+
+real	0m1.475s
+user	0m1.435s
+sys	0m1.922s
+3/1/3 Done
+3/2/1 File - data_3.csv / Nodes - 2 / Column - 1
+
+real	0m1.620s
+user	0m2.371s
+sys	0m2.046s
+3/2/1 Done
+3/2/2 File - data_3.csv / Nodes - 2 / Column - 2
+
+real	0m1.568s
+user	0m2.235s
+sys	0m2.110s
+3/2/2 Done
+3/2/3 File - data_3.csv / Nodes - 2 / Column - 3
+
+real	0m1.622s
+user	0m2.393s
+sys	0m2.047s
+3/2/3 Done
+3/4/1 File - data_3.csv / Nodes - 4 / Column - 1
+
+real	0m2.078s
+user	0m4.664s
+sys	0m4.001s
+3/4/1 Done
+3/4/2 File - data_3.csv / Nodes - 4 / Column - 2
+
+real	0m2.130s
+user	0m4.677s
+sys	0m4.136s
+3/4/2 Done
+3/4/3 File - data_3.csv / Nodes - 4 / Column - 3
+
+real	0m2.125s
+user	0m4.836s
+sys	0m4.027s
+3/4/3 Done
+3/8/1 File - data_3.csv / Nodes - 8 / Column - 1
+
+real	0m3.082s
+user	0m8.669s
+sys	0m4.503s
+3/8/1 Done
+3/8/2 File - data_3.csv / Nodes - 8 / Column - 2
+
+real	0m3.067s
+user	0m8.705s
+sys	0m4.545s
+3/8/2 Done
+3/8/3 File - data_3.csv / Nodes - 8 / Column - 3
+
+real	0m3.100s
+user	0m8.760s
+sys	0m4.537s
+3/8/3 Done
+3/16/1 File - data_3.csv / Nodes - 16 / Column - 1
+
+real	0m5.187s
+user	0m17.147s
+sys	0m8.213s
+3/16/1 Done
+3/16/2 File - data_3.csv / Nodes - 16 / Column - 2
+
+real	0m5.207s
+user	0m17.287s
+sys	0m8.289s
+3/16/2 Done
+3/16/3 File - data_3.csv / Nodes - 16 / Column - 3
+
+real	0m5.151s
+user	0m16.938s
+sys	0m6.787s
+3/16/3 Done
+3/32/1 File - data_3.csv / Nodes - 32 / Column - 1
+
+real	0m10.155s
+user	0m52.856s
+sys	0m19.945s
+3/32/1 Done
+3/32/2 File - data_3.csv / Nodes - 32 / Column - 2
+
+real	0m10.175s
+user	0m53.073s
+sys	0m21.711s
+3/32/2 Done
+3/32/3 File - data_3.csv / Nodes - 32 / Column - 3
+
+real	0m10.083s
+user	0m52.065s
+sys	0m19.629s
+3/32/3 Done
+4/1/1 File - data_4.csv / Nodes - 1 / Column - 1
+
+real	0m2.105s
+user	0m1.998s
+sys	0m1.985s
+4/1/1 Done
+4/1/2 File - data_4.csv / Nodes - 1 / Column - 2
+
+real	0m2.125s
+user	0m1.996s
+sys	0m2.015s
+4/1/2 Done
+4/1/3 File - data_4.csv / Nodes - 1 / Column - 3
+
+real	0m2.224s
+user	0m2.122s
+sys	0m1.973s
+4/1/3 Done
+4/2/1 File - data_4.csv / Nodes - 2 / Column - 1
+
+real	0m2.108s
+user	0m3.311s
+sys	0m2.127s
+4/2/1 Done
+4/2/2 File - data_4.csv / Nodes - 2 / Column - 2
+
+real	0m2.077s
+user	0m3.145s
+sys	0m2.187s
+4/2/2 Done
+4/2/3 File - data_4.csv / Nodes - 2 / Column - 3
+
+real	0m2.151s
+user	0m3.332s
+sys	0m2.213s
+4/2/3 Done
+4/4/1 File - data_4.csv / Nodes - 4 / Column - 1
+
+real	0m2.546s
+user	0m6.362s
+sys	0m4.171s
+4/4/1 Done
+4/4/2 File - data_4.csv / Nodes - 4 / Column - 2
+
+real	0m2.686s
+user	0m6.651s
+sys	0m4.468s
+4/4/2 Done
+4/4/3 File - data_4.csv / Nodes - 4 / Column - 3
+
+real	0m2.567s
+user	0m6.432s
+sys	0m4.101s
+4/4/3 Done
+4/8/1 File - data_4.csv / Nodes - 8 / Column - 1
+
+real	0m3.469s
+user	0m11.630s
+sys	0m5.189s
+4/8/1 Done
+4/8/2 File - data_4.csv / Nodes - 8 / Column - 2
+
+real	0m3.501s
+user	0m11.924s
+sys	0m4.802s
+4/8/2 Done
+4/8/3 File - data_4.csv / Nodes - 8 / Column - 3
+
+real	0m3.546s
+user	0m12.188s
+sys	0m5.164s
+4/8/3 Done
+4/16/1 File - data_4.csv / Nodes - 16 / Column - 1
+
+real	0m5.550s
+user	0m22.551s
+sys	0m7.450s
+4/16/1 Done
+4/16/2 File - data_4.csv / Nodes - 16 / Column - 2
+
+real	0m5.628s
+user	0m23.600s
+sys	0m8.969s
+4/16/2 Done
+4/16/3 File - data_4.csv / Nodes - 16 / Column - 3
+
+real	0m5.546s
+user	0m22.933s
+sys	0m6.802s
+4/16/3 Done
+4/32/1 File - data_4.csv / Nodes - 32 / Column - 1
+
+real	0m10.782s
+user	1m10.238s
+sys	0m23.991s
+4/32/1 Done
+4/32/2 File - data_4.csv / Nodes - 32 / Column - 2
+
+real	0m10.829s
+user	1m13.771s
+sys	0m21.082s
+4/32/2 Done
+4/32/3 File - data_4.csv / Nodes - 32 / Column - 3
+
+real	0m10.695s
+user	1m10.482s
+sys	0m20.862s
+4/32/3 Done
+5/1/1 File - data_5.csv / Nodes - 1 / Column - 1
+
+real	0m8.385s
+user	0m7.376s
+sys	0m2.846s
+5/1/1 Done
+5/1/2 File - data_5.csv / Nodes - 1 / Column - 2
+
+real	0m8.186s
+user	0m7.290s
+sys	0m2.783s
+5/1/2 Done
+5/1/3 File - data_5.csv / Nodes - 1 / Column - 3
+
+real	0m8.135s
+user	0m7.193s
+sys	0m2.820s
+5/1/3 Done
+5/2/1 File - data_5.csv / Nodes - 2 / Column - 1
+
+real	0m6.868s
+user	0m11.881s
+sys	0m3.053s
+5/2/1 Done
+5/2/2 File - data_5.csv / Nodes - 2 / Column - 2
+
+real	0m6.838s
+user	0m11.847s
+sys	0m3.021s
+5/2/2 Done
+5/2/3 File - data_5.csv / Nodes - 2 / Column - 3
+
+real	0m6.699s
+user	0m11.580s
+sys	0m3.049s
+5/2/3 Done
+5/4/1 File - data_5.csv / Nodes - 4 / Column - 1
+
+real	0m6.404s
+user	0m20.633s
+sys	0m4.997s
+5/4/1 Done
+5/4/2 File - data_5.csv / Nodes - 4 / Column - 2
+
+real	0m6.265s
+user	0m20.389s
+sys	0m4.919s
+5/4/2 Done
+5/4/3 File - data_5.csv / Nodes - 4 / Column - 3
+
+real	0m6.172s
+user	0m19.988s
+sys	0m5.031s
+5/4/3 Done
+5/8/1 File - data_5.csv / Nodes - 8 / Column - 1
+
+real	0m7.158s
+user	0m40.053s
+sys	0m5.701s
+5/8/1 Done
+5/8/2 File - data_5.csv / Nodes - 8 / Column - 2
+
+real	0m7.052s
+user	0m39.300s
+sys	0m5.746s
+5/8/2 Done
+5/8/3 File - data_5.csv / Nodes - 8 / Column - 3
+
+real	0m7.095s
+user	0m39.554s
+sys	0m5.684s
+5/8/3 Done
+5/16/1 File - data_5.csv / Nodes - 16 / Column - 1
+
+real	0m9.564s
+user	1m25.944s
+sys	0m8.653s
+5/16/1 Done
+5/16/2 File - data_5.csv / Nodes - 16 / Column - 2
+
+real	0m9.731s
+user	1m28.492s
+sys	0m8.537s
+5/16/2 Done
+5/16/3 File - data_5.csv / Nodes - 16 / Column - 3
+
+real	0m9.595s
+user	1m26.021s
+sys	0m8.391s
+5/16/3 Done
+5/32/1 File - data_5.csv / Nodes - 32 / Column - 1
+
+real	0m17.052s
+user	4m30.450s
+sys	0m23.245s
+5/32/1 Done
+5/32/2 File - data_5.csv / Nodes - 32 / Column - 2
+
+real	0m17.093s
+user	4m31.175s
+sys	0m23.988s
+5/32/2 Done
+5/32/3 File - data_5.csv / Nodes - 32 / Column - 3
+
+real	0m17.074s
+user	4m30.600s
+sys	0m23.867s
+5/32/3 Done
