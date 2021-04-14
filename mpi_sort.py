@@ -5,14 +5,15 @@ from sys import argv, exit
 import numpy as np
 import pandas as pd
 from hashlib import md5
-from mpi4py import MPI
+from mpi4py import MPI, rc
+rc.recv_mprobe = False
 
 # For troubleshooting
 import time
 
 # Global variable for now
 printAll = True
-printAll = False
+#printAll = False
  
 # Grab useful things
 comm = MPI.COMM_WORLD
@@ -123,11 +124,14 @@ data_to_nodes = bin_my_array( my_array )
 
 # Create integer array of how many items are going to each node
 count_to_nodes = np.zeros( size, dtype=np.uint64 )
-for i in range( size):
+
+# Send max nodes instead
+for i in range( size ):
 	count_to_nodes[i] = len( data_to_nodes[i] )
 
-# Clean up my array but keep for receiving data later
-my_array[:] = np.nan
+to_max = int( np.amax( count_to_nodes ) )
+
+count_to_nodes[:] = to_max
 
 if printAll:
 		comm.Barrier()
@@ -136,78 +140,42 @@ if printAll:
 
 # Make all to all mpi call passing how many data items are being send to each
 count_from_nodes = comm.alltoall( count_to_nodes )
+max_n = int( np.amax( count_from_nodes ) )
 
 if printAll:
 		comm.Barrier()
 		time.sleep( rank*0.25 )
 		print( 'Rank %d count_from_nodes: '%rank, count_from_nodes )
 
-# Count the total items expecting to be received
-my_n = np.sum( count_from_nodes )
+send_all_array = np.empty( ( size, max_n, 4 ), dtype=np.float32 )
+send_all_array[:] = np.nan
 
-# Make my_array bigger if it's smaller than incoming data
-if my_n > my_array.shape[0]:
-	if printAll:
-		print("Rank %d my_array not big enough!: %d"%(rank, my_n) )
-	del my_array
-	my_array = np.ones( ( my_n, 4 ), dtype=np.float32 ) * np.nan
+for i, send_data in enumerate( data_to_nodes ):
+	if send_data.size <= 0:
+		continue
+	send_all_array[ i, 0 : send_data.shape[0], : ] = send_data
 
-# Calc where my data should be saved
-if rank == 0:
-	my_i = 0
-else:
-	my_i = int( np.sum( count_from_nodes[0:rank] ) )
+#count_from_nodes = comm.alltoall( count_to_nodes )
+recv_all_array = comm.alltoall( send_all_array )
 
-# Store subsection of my data into my array 
-my_array[ int(my_i) : int( my_i + count_from_nodes[rank] ), : ] = data_to_nodes[ rank ][:,:]
-
-if printAll:
+if printAll: 
 		comm.Barrier()
 		time.sleep( rank*0.25 )
-		print( 'Rank %d saving own data at index: [ %d : %d ]' %( rank, int( my_i ), int( my_i + count_from_nodes[rank] ) ) )
-		print( my_array )
+		print( 'Rank %d sending all_to_all matrix' % rank)
+		for i in range( size ):
+			print( send_all_array[i] )
 
-# Loop through all nodes and send subsections of array to each
-for i in range( size ):
+# Reshape in long list with 4 columns
+recv_all_array = np.reshape( recv_all_array, ( -1, 4 ) )
 
-	# Skip self
-	if i == rank:
-		continue
-
-	# Send the array, and move on
-	comm.isend( data_to_nodes[i], dest=i, tag=rank )
-
-	if printAll:
-		print( "Rank %d to %d: \n"%(rank, i),data_to_nodes[i] )
+# Remove NaN rows
+my_array = recv_all_array[~np.isnan(recv_all_array).any(axis=1)]
 
 if printAll:
 		comm.Barrier()
 		time.sleep( rank*0.5 )
+		print( 'Rank %d will sort my_array:\n' % rank, my_array )
 
-# keeps track where to place incoming data in my array
-my_i = 0
-for i in range( size ):
-
-	# Skip self
-	if rank == i:
-		# My data should already be in array, skip.
-		my_i += count_from_nodes[i]
-		continue
-	
-	# Wait to receive incoming data and place directly into my_array.
-	my_array[ int(my_i) : int(my_i + count_from_nodes[i]), : ] = comm.recv( source=i, tag=i )
-	my_i += count_from_nodes[i]
-
-	if printAll:
-		print("Rank %d from %d:\n"%(rank,i), my_array )
-
-# Remove np.nan rows
-my_array = my_array[ 0 : my_n , : ]
-
-if printAll:
-		comm.Barrier()
-		time.sleep( rank*0.25 )
-		print( "Rank %d will sort: \n "%rank, my_array )
 
 # Sort my_array by column
 my_array = my_array[ np.argsort( my_array[:, sort_col] ) ]
