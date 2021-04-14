@@ -1,0 +1,21 @@
+#!/bin/bash
+#$ -N mpi_loop_1
+#$ -pe mpi 128
+ 
+source babbage-project-mpi/capstone_env/bin/activate
+
+for (( i = 1; i <= 5; i++ ))
+do
+	for (( j=1; j<=128; j=j*2 ))
+	do
+		for (( k=1; k<=3; k++ ))
+		do
+			echo "$i/$j/$k File - data_$i.csv / Nodes - $j / Column - $k" >&2
+			echo "$i/$j/$k File - data_$i.csv / Nodes - $j / Column - $k"
+			echo "mpirun -n $j python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_$i.csv $k"
+			time mpirun -n $j python3 babbage-project-mpi/mpi_sort.py babbage-project-mpi/data_$i.csv $k
+			echo "$i/$j/$k Done" >&2
+			echo "$i/$j/$k Done"
+		done
+	done
+done
