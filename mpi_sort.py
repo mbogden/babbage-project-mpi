@@ -175,7 +175,7 @@ for i in range( size ):
 		continue
 
 	# Send the array, and move on
-	comm.isend( data_to_nodes[i], dest=i, tag=25 )
+	comm.isend( data_to_nodes[i], dest=i, tag=rank )
 
 	if printAll:
 		print( "Rank %d to %d: \n"%(rank, i),data_to_nodes[i] )
@@ -195,7 +195,7 @@ for i in range( size ):
 		continue
 	
 	# Wait to receive incoming data and place directly into my_array.
-	my_array[ int(my_i) : int(my_i + count_from_nodes[i]), : ] = comm.recv( source=i, tag=25 )
+	my_array[ int(my_i) : int(my_i + count_from_nodes[i]), : ] = comm.recv( source=i, tag=i )
 	my_i += count_from_nodes[i]
 
 	if printAll:
