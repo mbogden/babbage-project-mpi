@@ -13,7 +13,7 @@ import time
 
 # Global variable for now
 printAll = True
-#printAll = False
+printAll = False
  
 # Grab useful things
 comm = MPI.COMM_WORLD
